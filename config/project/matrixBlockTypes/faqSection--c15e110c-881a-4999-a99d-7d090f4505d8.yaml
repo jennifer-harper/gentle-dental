@@ -1,0 +1,82 @@
+field: e9fddc4a-fb16-4c1c-afc2-3807def662a8 # FAQs
+fieldLayouts:
+  a91a2244-e30c-4f80-9afb-e033e354e0a9:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 1b4f98b2-b531-4e97-856c-a7818fdb427d # FAQ Question
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 46cd0ce7-803c-4530-92b9-5033625ad771
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c96a663b-ebe2-4888-b62f-53c44fea8971 # FAQ Answer
+            instructions: null
+            label: null
+            required: true
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: fcf22594-1686-4f67-9af5-c2de797aab15
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: dd807834-fd11-41f1-8170-829f29675ec5
+        userCondition: null
+fields:
+  1b4f98b2-b531-4e97-856c-a7818fdb427d: # FAQ Question
+    columnSuffix: ojavnggm
+    contentColumnType: text
+    fieldGroup: null
+    handle: faqQuestion
+    instructions: null
+    name: 'FAQ Question'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c96a663b-ebe2-4888-b62f-53c44fea8971: # FAQ Answer
+    columnSuffix: zkvuwkjo
+    contentColumnType: text
+    fieldGroup: null
+    handle: faqAnswer
+    instructions: null
+    name: 'FAQ Answer'
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: 6559a804-b843-4bb6-bca5-e1ec814c419e # Simple
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+handle: faqSection
+name: 'FAQ Section'
+sortOrder: 1

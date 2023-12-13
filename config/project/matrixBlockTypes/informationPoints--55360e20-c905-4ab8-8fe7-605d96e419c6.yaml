@@ -1,0 +1,50 @@
+field: 404bd0ae-9bda-40d1-9caa-bd3084d4579b # What to expect
+fieldLayouts:
+  9325b2a9-5d7e-4def-b5e6-47411f8ead3c:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: b9d0f348-9d5f-4807-91d1-03fc9d0ffb44 # Information
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9b5ff355-fb6d-4072-a799-7ff0ad8bc0ea
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 4b081f4e-90ee-4c27-b804-4ab64bcef3da
+        userCondition: null
+fields:
+  b9d0f348-9d5f-4807-91d1-03fc9d0ffb44: # Information
+    columnSuffix: okidjsjb
+    contentColumnType: text
+    fieldGroup: null
+    handle: information
+    instructions: null
+    name: Information
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: 6559a804-b843-4bb6-bca5-e1ec814c419e # Simple
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+handle: informationPoints
+name: 'Information Points'
+sortOrder: 1

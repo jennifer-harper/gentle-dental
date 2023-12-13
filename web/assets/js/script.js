@@ -9,8 +9,14 @@ $(document).ready(function () {
     event.preventDefault() // Prevent default behavior
 
     var accordionItem = $(this).parent('.accordion-item')
-    accordionItem.find('.answer').slideToggle(500, function () {
-      accordionItem.toggleClass('open', $(this).is(':visible'))
+    var answer = accordionItem.find('.answer')
+
+    // Toggle the class immediately
+    accordionItem.toggleClass('open')
+
+    // Use transitionend event to handle the completion of slideToggle
+    answer.slideToggle(500).one('transitionend', function () {
+      // Code to execute after the slideToggle animation is complete
     })
   })
 })

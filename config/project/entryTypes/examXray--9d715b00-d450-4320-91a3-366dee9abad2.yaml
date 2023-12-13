@@ -1,0 +1,71 @@
+fieldLayouts:
+  6209e26a-9789-4b42-9d48-e5c6b01ebbd7:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: 7995c6c4-fb28-4ff1-86f0-318dc7b8573c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e9fddc4a-fb16-4c1c-afc2-3807def662a8 # FAQs
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1e3bd000-7e54-49d5-a864-c2764cd96af1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 404bd0ae-9bda-40d1-9caa-bd3084d4579b # What to expect
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f02c7471-7819-4d26-8e1f-0438572d5466
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 93c23aa6-5df1-4ca9-b1a1-b6d03dca326c
+        userCondition: null
+handle: examXray
+hasTitleField: false
+name: 'Exam & Xray'
+section: 4503af49-dbfd-44e2-b013-c487224ab8b9 # Exam & Xray
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

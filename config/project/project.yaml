@@ -1,4 +1,4 @@
-dateModified: 1702423963
+dateModified: 1702505625
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: gentledental
@@ -14,17 +14,28 @@ fs:
 meta:
   __names__:
     0fab3bf0-6361-445a-b238-c15ed8c4f5f8: home # home
+    1b4f98b2-b531-4e97-856c-a7818fdb427d: 'FAQ Question' # FAQ Question
     6c60c910-8f6b-4153-8c35-b01931f85d58: 'FAQ answer' # FAQ answer
+    9d715b00-d450-4320-91a3-366dee9abad2: 'Exam & Xray' # Exam & Xray
     023e5938-6808-4ed5-99cb-3bfd69fb6f3d: FAQS # FAQS
+    47b3c55f-f156-42ae-8005-da001d7d0c2e: 'FAQ Title' # FAQ Title
     76b6f032-98f8-4d71-80c6-5178a9fbb9f1: Default # Default
     76ed36c0-3eb8-41f4-91dc-0d4012c2f0c7: 'FAQ Exam and X-ray' # FAQ Exam and X-ray
     83e14727-f47c-4dcd-9d83-40fb787c7654: gentledental # gentledental
+    323ba897-a784-49b3-9075-6dfb120f8f4a: 'Check up' # Check up
+    404bd0ae-9bda-40d1-9caa-bd3084d4579b: 'What to expect' # What to expect
     609a7d98-d773-427c-ab93-928a27e885ec: home # home
     805ffc42-1721-4cde-a599-12ed2eee29ce: gentledental # gentledental
+    4503af49-dbfd-44e2-b013-c487224ab8b9: 'Exam & Xray' # Exam & Xray
     6559a804-b843-4bb6-bca5-e1ec814c419e: Simple # Simple
+    55360e20-c905-4ab8-8fe7-605d96e419c6: 'Information Points' # Information Points
     6494302b-0e12-4f9d-9edb-4e0069a82e40: other # other
     57989829-02c2-4417-b994-0a51afbfd3e5: other # other
+    b9d0f348-9d5f-4807-91d1-03fc9d0ffb44: Information # Information
+    c15e110c-881a-4999-a99d-7d090f4505d8: 'FAQ Section' # FAQ Section
+    c96a663b-ebe2-4888-b62f-53c44fea8971: 'FAQ Answer' # FAQ Answer
     e1a24ec9-d230-4a95-bb50-3aad81ca10d0: Common # Common
+    e9fddc4a-fb16-4c1c-afc2-3807def662a8: FAQs # FAQs
     e17d1087-9a94-4873-a162-18d74f187ea1: Images # Images
 plugins:
   ckeditor:

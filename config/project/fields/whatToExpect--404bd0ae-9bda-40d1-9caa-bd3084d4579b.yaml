@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: 323ba897-a784-49b3-9075-6dfb120f8f4a # Check up
+handle: whatToExpect
+instructions: null
+name: 'What to expect'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_whattoexpect}}'
+  maxBlocks: 6
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix
