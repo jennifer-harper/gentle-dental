@@ -1,0 +1,426 @@
+@import url("https://fonts.cdnfonts.com/css/sweet-sans-pro");
+@import url("https://fonts.cdnfonts.com/css/recoleta");
+*,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  position: relative;
+  height: 100%;
+  margin: 0;
+  overflow-x: hidden;
+  background-color: #233876;
+  color: #374151;
+  font-family: "Sweet Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 1em;
+  line-height: 1.5;
+}
+@media (min-width: 160em) {
+  body {
+    font-size: 2em;
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0; /* Remove scrollbar space */
+  background: transparent; /* Optional: just make scrollbar invisible */
+}
+
+.overflow-wrapper {
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+a {
+  color: #2cdcac;
+  transition: color 0.3s ease-in-out;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  color: #1eb78d;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/**
+ * decorations
+ */
+.bttn {
+  display: flex;
+  margin-top: 50px;
+}
+.bttn a {
+  padding: 0.7em 1.2em;
+  display: flex;
+  background-color: #2cdcac;
+  align-items: center;
+  font-family: "Recoleta", sans-serif;
+  border-radius: 6vw;
+}
+.bttn a p {
+  color: #233876;
+  font-weight: 500;
+  line-height: 1em;
+  margin-right: 0.8em;
+  margin-bottom: 0;
+}
+.bttn a svg {
+  fill: #233876;
+  transform: rotate(45deg);
+  width: 1.2em;
+}
+
+.underlined-heading {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #1e429f;
+}
+@media (min-width: 64em) {
+  .underlined-heading {
+    padding-bottom: 4vw;
+  }
+}
+
+.bg-100 .underlined-heading {
+  border-bottom: 1px solid #a4cafe;
+}
+
+/**
+ * Typography
+ */
+.text-center {
+  text-align: center;
+}
+
+p {
+  margin: 0 0 1em;
+}
+@media (min-width: 64em) {
+  p {
+    max-width: 35vw;
+  }
+}
+
+p.intro {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-top: 40px;
+  font-weight: 500;
+}
+@media (min-width: 160em) {
+  p.intro {
+    margin-top: 3vw;
+  }
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 0.95;
+  font-family: "Recoleta", sans-serif;
+  margin: 0;
+  font-weight: 400;
+  color: #233876;
+}
+
+.dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
+  color: #fff;
+}
+.dark p {
+  color: #D1D5DB;
+}
+
+h1 {
+  font-size: 2.8em;
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 2.4em;
+}
+
+h3 {
+  font-size: 1.8em;
+}
+
+@media (min-width: 48em) {
+  h1 {
+    font-size: 7.5vw;
+  }
+  h2 {
+    font-size: 6.8vw;
+  }
+  h3 {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 64em) {
+  h1 {
+    font-size: 5.7vw;
+    margin-bottom: unset;
+  }
+  h2 {
+    font-size: 4.7vw;
+  }
+  h3 {
+    font-size: 2.2vw;
+  }
+}
+/**
+ * bg colors
+ */
+.bg-900 {
+  background-color: #233876;
+}
+
+.bg-800 {
+  background-color: #1e429f;
+}
+
+.bg-700 {
+  background-color: #1a56db;
+}
+
+.bg-500 {
+  background-color: #3f83f8;
+}
+
+.bg-300 {
+  background-color: #a4cafe;
+}
+
+.bg-100 {
+  background-color: #F9FAFB;
+}
+
+.bg-50 {
+  background-color: #EBF5FF;
+}
+
+/**
+ * image related
+ */
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.bg-img-svg {
+  width: 100%;
+  background-image: url("/uploads/images/gd-bg-placeholder.svg");
+  background-repeat: no-repeat;
+  background-position: 100% 80%;
+  background-size: 150%;
+}
+@media (min-width: 64em) {
+  .bg-img-svg {
+    background-image: url("/uploads/images/gd-bg-placeholder.svg");
+    background-repeat: no-repeat;
+    background-position: 100% 50%;
+    background-size: contain;
+  }
+}
+
+.sm-bg-img-svg {
+  width: 100%;
+  background-image: url("/uploads/images/sm-bg.svg");
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 100%;
+}
+
+svg {
+  overflow: visible !important;
+}
+
+/**
+ * width, padding and wrappers
+ */
+@media (min-width: 64em) {
+  .max-60 {
+    max-width: 60%;
+  }
+}
+
+.pad-all {
+  padding: 8vw;
+}
+@media (min-width: 64em) {
+  .pad-all {
+    padding: 4%;
+  }
+  .pad-all.pad-lg {
+    padding: 8vw;
+  }
+}
+
+.pad-sides {
+  padding-left: 8vw;
+  padding-right: 8vw;
+}
+@media (min-width: 64em) {
+  .pad-sides {
+    padding-left: 4%;
+    padding-right: 4%;
+  }
+  .pad-sides.pad-lg {
+    padding-left: 8vw;
+    padding-right: 8vw;
+  }
+  .pad-sides.no-left {
+    padding-left: 0;
+  }
+  .pad-sides.no-right {
+    padding-right: 0;
+  }
+}
+
+.pad-top {
+  padding-top: 8vw;
+}
+@media (min-width: 64em) {
+  .pad-top {
+    padding-top: 4vw;
+  }
+}
+
+.pad-btm {
+  padding-bottom: 8vw;
+}
+@media (min-width: 64em) {
+  .pad-btm {
+    padding-bottom: 4%;
+  }
+}
+
+/**
+ * flex
+ */
+.flex-wrap {
+  display: flex;
+  flex-direction: column;
+}
+.flex-wrap.wrap {
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+@media (min-width: 64em) {
+  .flex-wrap {
+    flex-direction: row;
+  }
+  .flex-wrap .half {
+    flex: 1;
+    flex-basis: 50%;
+  }
+  .flex-wrap .half.grow-60 {
+    flex-basis: 60%;
+  }
+}
+
+.cont-align-end,
+.just-cont-center,
+.just-cont-between,
+.align-items-center,
+.img-align-end {
+  display: flex;
+}
+
+.img-align-end {
+  align-items: flex-end;
+}
+
+.cont-align-end {
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.just-cont-between {
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.just-cont-center {
+  flex-direction: column;
+  justify-content: center;
+}
+
+.align-items-center {
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.num-point div {
+  width: 100%;
+  padding: 1.5em;
+}
+@media (min-width: 48em) {
+  .num-point div {
+    width: 50%;
+  }
+}
+@media (min-width: 160em) {
+  .num-point div {
+    padding: 1.5em;
+  }
+}
+.num-point .num-heading {
+  color: #2cdcac;
+  font-size: 2em;
+  font-family: "Recoleta", sans-serif;
+  margin-bottom: 0.8em;
+}
+@media (min-width: 64em) {
+  .num-point.w-33 div {
+    width: 33.333%;
+  }
+}
+
+.faq-wrapper {
+  padding-top: 1em;
+}
+@media (min-width: 64em) {
+  .faq-wrapper {
+    padding-left: 20vw;
+  }
+}
+.faq-wrapper .accordion-item {
+  border-bottom: 1px solid #a4cafe;
+}
+.faq-wrapper .accordion-item:last-of-type {
+  border-width: 0;
+}
+.faq-wrapper .question {
+  cursor: pointer;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding-top: 1em;
+  margin-bottom: 1em;
+}
+.faq-wrapper .question span {
+  margin-left: 1em;
+  background-color: #2cdcac;
+  padding: 10px;
+  display: flex;
+  border-radius: 100%;
+}
+.faq-wrapper .question svg {
+  transition: all 0.3s ease-in;
+  stroke: #fff;
+  width: 20px;
+  height: 20px;
+}
+.faq-wrapper .answer {
+  display: none;
+  overflow: hidden;
+  margin-bottom: 1em;
+}
+.faq-wrapper .open .question svg {
+  transform: rotate(-180deg);
+}
+
+/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,8 @@
+/.env
+/.idea
+/vendor
+.DS_Store
+
+
+# Prevent to .sql files (added by fortrabbit/craft-copy)
+*.sql
