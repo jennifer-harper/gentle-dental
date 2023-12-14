@@ -1,0 +1,24 @@
+fieldLayouts:
+  250c88f7-14ad-4f99-aa36-2cb8133679e0:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 32c7d1f0-b971-4de2-b8d0-d501f8c8ff25 # Common Image One
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 07c990a8-9551-443f-9e0e-830ba2cd1e52
+            userCondition: null
+            warning: null
+            width: 100
+        name: Image
+        uid: 6b0b8147-d479-4357-a9b3-9400e5f26d02
+        userCondition: null
+handle: servicesPages
+name: 'Services Pages'
+sortOrder: 2

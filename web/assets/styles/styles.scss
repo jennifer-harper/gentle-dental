@@ -111,7 +111,7 @@ ul {
   }
 }
 
-p.intro{
+.intro p{
   font-size: calc($base-font-size*1.2);
   line-height: 1.25;
   margin-top:$sm;
@@ -181,17 +181,22 @@ img {
 
 .bg-img-svg{
   width:100%;
-  @include bg-img(url("/uploads/images/gd-bg-placeholder.svg"), 100% 80%, 150%);
+  @include bg-img-pos( 100% 80%, 150%);
   @media #{$mq-medium} {
-    @include bg-img(url("/uploads/images/gd-bg-placeholder.svg"), 100% 50%, contain);
+    @include bg-img-pos(100% 50%, contain);
   }
 }
+
 .sm-bg-img-svg{
   width:100%;
-  @include bg-img(url("/uploads/images/sm-bg.svg"), 50% 50%, 100%);
-
+  @include bg-img-pos(50% 50%, 100%);
 }
 
+
+.bg-img-svg{
+  width:100%;
+  @include bg-img(url("xx.jpg"),50% 50%, 100%);
+}
 
 svg {
   overflow: visible !important;
@@ -210,6 +215,7 @@ svg {
     max-width:60%
   }
 }
+
 
 
 
@@ -282,6 +288,10 @@ svg {
 }
 
 
+
+
+
+
 .cont-align-end,
 .just-cont-center,
 .just-cont-between,
@@ -322,6 +332,8 @@ svg {
   div{
     width:100%;
     padding:$base-font-size*1.5;
+
+    padding-top: 0;
     @media #{$mq-small}{
       width:50%;
     }
@@ -331,6 +343,7 @@ svg {
   }
 
   .num-heading{
+    line-height: 1;
     color: $base-accent-color;
     font-size: $base-font-size*2;
     font-family: $header-font;
@@ -339,7 +352,7 @@ svg {
 
   &.w-33{
     div{
-      @media #{$mq-medium}{
+      @media #{$mq-large}{
         width:33.333%;
       }
     }
@@ -396,6 +409,33 @@ svg {
       svg{
           transform:rotate(-180deg);
         }
+    }
+  }
+}
+
+//style block 5
+.max-img-one{
+  padding-left:0;
+  padding-right:0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  @media #{$mq-medium} {
+    padding-left:4%;
+    padding-right:4%;
+    img{
+      max-width:35vw
+    }
+
+  }
+}
+
+
+//style block 2
+.style-two-block{
+  .flex-wrap:last-of-type{
+    @media #{$mq-medium} {
+    flex-direction:row-reverse;
     }
   }
 }

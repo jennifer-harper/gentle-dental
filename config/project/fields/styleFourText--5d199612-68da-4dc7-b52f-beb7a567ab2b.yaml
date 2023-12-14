@@ -1,0 +1,23 @@
+columnSuffix: sfkaowpx
+contentColumnType: text
+fieldGroup: d89ae37b-0b78-4516-9204-5f3145b063d4 # Services Pages
+handle: styleFourText
+instructions: null
+name: 'Style Four Text '
+searchable: false
+settings:
+  availableTransforms: ''
+  availableVolumes: '*'
+  ckeConfig: e4cf4cf0-9fac-4d90-a42f-2bdb6eb23e8f # Just Paragrpah
+  columnType: text
+  defaultTransform: null
+  enableSourceEditingForNonAdmins: false
+  purifierConfig: null
+  purifyHtml: true
+  showUnpermittedFiles: false
+  showUnpermittedVolumes: false
+  showWordCount: false
+  wordLimit: null
+translationKeyFormat: null
+translationMethod: none
+type: craft\ckeditor\Field

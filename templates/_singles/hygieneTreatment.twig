@@ -2,7 +2,7 @@
 {% set bodyAttributes ={ class: "exam" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %}
-{% set page = craft.entries().section('examXRay').all() %}
+{% set page = craft.entries().section('hygieneTreatment').all() %}
 
 {% block content %}
   {% for entry in page %}

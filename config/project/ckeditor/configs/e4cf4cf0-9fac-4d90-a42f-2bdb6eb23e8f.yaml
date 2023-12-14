@@ -1,0 +1,9 @@
+headingLevels: false
+listPlugin: List
+name: 'Just Paragrpah'
+toolbar:
+  - heading
+  - '|'
+  - bold
+  - italic
+  - link

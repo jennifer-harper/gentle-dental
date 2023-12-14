@@ -1,0 +1,31 @@
+
+<div class="style-two-block">
+{% for block in entry.styleTwoMatrix %}
+{% if block.type == 'styleTwoGroup' %}
+<div class="flex-wrap">
+  {% set bgImgTwo = block.styleTwoBgImage.one() %}
+  <div class="half pad-sides pad-top sm-bg-img-svg bg-300 img-align-end" style="background-image: url('{{ bgImgTwo.getUrl() }}');">
+    {% set imageTwo = block.styleTwoImage.one() %}
+    {% if imageTwo %}
+      <img src="{{ imageTwo.getUrl() }}" alt="{{ imageTwo.alt}}">
+    {% endif %}
+  </div>
+
+  <div class="half pad-all bg-100 just-cont-center">
+    {% if block.styleTwoTitle %}
+      <h2>{{block.styleTwoTitle}}</h2>
+    {% endif %}
+
+    <div class="intro">
+      {% if block.styleTwoTextBold %}
+        {{block.styleTwoTextBold}}
+      {% endif %}
+    </div>
+    {% if block.styleTwoText %}
+      {{block.styleTwoText}}
+    {% endif %}
+  </div>
+</div>
+{% endif %}
+{% endfor %}
+</div>

@@ -1,0 +1,19 @@
+columnSuffix: teqincfp
+contentColumnType: text
+fieldGroup: d89ae37b-0b78-4516-9204-5f3145b063d4 # Services Pages
+handle: styleFourTitle
+instructions: null
+name: 'Style Four title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

@@ -1,0 +1,24 @@
+    <div class="flex-wrap bg-50 pad-top pad-btm">
+
+      <div class="half pad-sides cont-align-end">
+        {% if entry.styleThreeTitle %}
+          <h2>{{entry.styleThreeTitle}}</h2>
+        {% endif %}
+          <div class="intro">
+          {% if entry.styleThreeTextBold %}
+            {{entry.styleThreeTextBold}}
+          {% endif %}
+        </div>
+        {% if entry.styleThreeText %}
+          {{entry.styleThreeText}}
+        {% endif %}
+      </div>
+
+      <div class="half grow-60  {% block class %}  {% endblock %} ">
+        {% set imageThree = entry.styleThreeImage.one() %}
+        {% if imageThree %}
+          <img src="{{ imageThree.getUrl() }}" alt="{{ imageThree.alt}}">
+        {% endif %}
+      </div>
+
+    </div>

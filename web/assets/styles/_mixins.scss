@@ -1,4 +1,13 @@
 //background-images
+@mixin bg-img-pos($background-position:50% 50%, $background-size:cover) {
+  background: {
+    repeat: no-repeat;
+    position: $background-position;
+    size: $background-size;
+  }
+}
+
+
 @mixin bg-img($image, $background-position:50% 50%, $background-size:cover) {
   background: {
     image: $image;

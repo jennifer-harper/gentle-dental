@@ -1,13 +1,13 @@
 columnSuffix: null
 contentColumnType: string
 fieldGroup: d89ae37b-0b78-4516-9204-5f3145b063d4 # Services Pages
-handle: faqs
+handle: styleTwoMatrix
 instructions: null
-name: FAQs
+name: 'Style Two Matrix'
 searchable: false
 settings:
-  contentTable: '{{%matrixcontent_faqs}}'
-  maxBlocks: null
+  contentTable: '{{%matrixcontent_styletwomatrix}}'
+  maxBlocks: 2
   minBlocks: null
   propagationKeyFormat: null
   propagationMethod: all

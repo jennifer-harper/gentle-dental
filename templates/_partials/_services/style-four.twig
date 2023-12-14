@@ -1,0 +1,15 @@
+    <div class="dark flex-wrap bg-700">
+      <div class="pad-all pad-lg align-items-center text-center">
+        {% if entry.styleFourTitle %}
+          <h2>{{entry.styleFourTitle}}</h2>
+        {% endif %}
+
+        <div class="pad-top pad-btm">
+        {% set commImgOne = servicesPages.commonImageOne.one() %}
+          <img src="{{ commImgOne.getUrl()  }}" alt="{{commImgOne.alt}}" />
+        </div>
+          {% if entry.styleFourText %}
+            {{entry.styleFourText}}
+          {% endif %}
+      </div>
+    </div>

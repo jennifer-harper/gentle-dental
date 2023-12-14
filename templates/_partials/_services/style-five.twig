@@ -1,0 +1,32 @@
+    <div class="dark pad-all">
+      <div class="underlined-heading">
+        {% if entry.whatToExpectTitle %}
+          <h2 class="max-60">{{entry.whatToExpectTitle}}</h2>
+        {% endif %}
+      </div>
+
+      <div class="flex-wrap">
+        <div class="pad-all half max-img-one right-align">
+            {% set imageWTE = entry.imageWTE.one() %}
+            {% if imageWTE %}
+              <img src="{{ imageWTE.getUrl() }}" alt="{{imageWTE.alt}}" />
+            {% endif %}
+        </div>
+
+
+
+        <div class="pad-top pad-btm half flex-wrap wrap num-point {% block class %}  {% endblock %}">
+          {% for block in entry.whatToExpect %}
+            {% if block.type == 'informationPoints' %}
+              <div>
+                {% set indexDisplay = loop.index < 10 ? '0' ~ loop.index : loop.index %}
+                <p class="num-heading">{{ indexDisplay }}</p>
+                {% if block.information %}
+                  {{block.information}}
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>

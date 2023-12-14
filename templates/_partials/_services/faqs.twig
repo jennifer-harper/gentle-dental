@@ -1,0 +1,26 @@
+    <div class="pad-all bg-100">
+      <div class="underlined-heading">
+        <h2>Frequently Asked Questions</h2>
+      </div>
+      <div class="faq-wrapper">
+        {% for block in entry.faqs %}
+        {% if block.type == 'faqSection' %}
+            <div class="accordion-item {{ loop.first ? 'open' : '' }}">
+                {% if block.faqQuestion %}
+                <h3 class='question'>{{block.faqQuestion}}
+                  <span>
+                      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 11" fill="none">
+                          <path d="M1 1L10 10L19 1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                      </svg>
+                  </span>
+                </h3>
+                {% endif %}
+
+                {% if block.faqAnswer %}
+                  <div class="answer">{{block.faqAnswer}}</div>
+                {% endif %}
+            </div>
+        {% endif %}
+        {% endfor %}
+      </div>
+    </div>

@@ -1,9 +1,9 @@
-columnSuffix: giovtwri
+columnSuffix: trxtrwmw
 contentColumnType: text
-fieldGroup: 023e5938-6808-4ed5-99cb-3bfd69fb6f3d # FAQS
-handle: faqTitle
+fieldGroup: e1a24ec9-d230-4a95-bb50-3aad81ca10d0 # Common
+handle: metaDescription
 instructions: null
-name: 'FAQ Title'
+name: 'Meta Description'
 searchable: false
 settings:
   byteLimit: null
