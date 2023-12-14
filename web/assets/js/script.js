@@ -1,3 +1,4 @@
+////faqs
 $(document).ready(function () {
   // Initially hide all answers
   $('.accordion-item .answer').hide()
@@ -19,4 +20,17 @@ $(document).ready(function () {
       // Code to execute after the slideToggle animation is complete
     })
   })
+})
+
+/////navigation
+$('.toggle').click(function () {
+  'use strict'
+  $('nav ul').slideToggle()
+})
+
+$(window).resize(function () {
+  'use strict'
+  if ($(window).width() > 992) {
+    $('nav ul').removeAttr('style')
+  }
 })

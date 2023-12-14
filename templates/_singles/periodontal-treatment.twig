@@ -1,8 +1,8 @@
 {% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "exam" } %} 
+{% set bodyAttributes ={ class: "periodontal" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %}
-{% set page = craft.entries().section('examXRay').all() %}
+{% set page = craft.entries().section('periodontalTreatment').all() %}
 
 {% block content %}
   {% for entry in page %}
@@ -12,12 +12,9 @@
     {% include '_partials/_services/style-two.twig' %}
 
     {% embed '_partials/_services/style-three.twig' %}
-    {% block wrapper %} pad-top pad-btm {% endblock %}
-    {% block copy %} cont-align-end {% endblock %}
-    {% block visual %} img-align-item-center pad-sides no-left  {% endblock %}
+      {% block copy %} pad-btm  pad-top cont-align-end{% endblock %}
+      {% block visual %} pad-sides pad-btm no-left{% endblock %}
     {% endembed %}
-
-    {% include '_partials/_services/style-four.twig' %}
 
     {% embed '_partials/_services/style-five.twig' %}
 

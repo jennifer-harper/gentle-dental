@@ -1,4 +1,4 @@
-    <div class="dark pad-all">
+    <div class="dark pad-all style-five">
       <div class="underlined-heading">
         {% if entry.whatToExpectTitle %}
           <h2 class="max-60">{{entry.whatToExpectTitle}}</h2>
@@ -6,7 +6,7 @@
       </div>
 
       <div class="flex-wrap">
-        <div class="pad-all half max-img-one right-align">
+        <div class="half max-img-one right-align ">
             {% set imageWTE = entry.imageWTE.one() %}
             {% if imageWTE %}
               <img src="{{ imageWTE.getUrl() }}" alt="{{imageWTE.alt}}" />
@@ -15,7 +15,7 @@
 
 
 
-        <div class="pad-top pad-btm half flex-wrap wrap num-point {% block class %}  {% endblock %}">
+        <div class=" half flex-wrap wrap num-point {% block class %}  {% endblock %}">
           {% for block in entry.whatToExpect %}
             {% if block.type == 'informationPoints' %}
               <div>

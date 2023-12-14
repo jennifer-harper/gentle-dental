@@ -1,6 +1,6 @@
-    <div class="flex-wrap bg-50 pad-top pad-btm">
+    <div class="flex-wrap bg-50  style-three {% block wrapper %}  {% endblock %}">
 
-      <div class="half pad-sides cont-align-end">
+      <div class="half pad-sides {% block copy %}  {% endblock %}">
         {% if entry.styleThreeTitle %}
           <h2>{{entry.styleThreeTitle}}</h2>
         {% endif %}
@@ -14,7 +14,7 @@
         {% endif %}
       </div>
 
-      <div class="half grow-60  {% block class %}  {% endblock %} ">
+      <div class="half grow-vis  {% block visual %} {% endblock %} ">
         {% set imageThree = entry.styleThreeImage.one() %}
         {% if imageThree %}
           <img src="{{ imageThree.getUrl() }}" alt="{{ imageThree.alt}}">
