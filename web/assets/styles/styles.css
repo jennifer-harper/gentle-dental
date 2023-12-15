@@ -390,6 +390,7 @@ nav .list-item li a:hover {
   nav .list-item {
     display: flex;
     justify-content: flex-end;
+    flex-wrap: wrap;
     padding-bottom: 0;
   }
 }
@@ -530,10 +531,14 @@ nav .list-item li a:hover {
   transform: rotate(-180deg);
 }
 
+.dental-implants .style-three,
+.dental-crowns .style-three,
 .periodontal .style-three {
   flex-direction: column-reverse;
 }
 @media (min-width: 64em) {
+  .dental-implants .style-three,
+  .dental-crowns .style-three,
   .periodontal .style-three {
     flex-direction: row;
   }

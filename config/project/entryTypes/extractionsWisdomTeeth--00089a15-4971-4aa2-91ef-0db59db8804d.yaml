@@ -1,0 +1,275 @@
+fieldLayouts:
+  6882e1c3-092b-4fb6-8c13-492bfff7d861:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: cb2ac1df-05e8-48e3-9483-c3263b5c4074
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 90c9b16f-c7c3-4dd9-96ca-aa26cf907067 # Meta Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2cf1ff5d-a425-4f62-ad86-121f05d4682b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: d8567fe0-59f3-48b6-95db-47013d31032b
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e82dbb37-5c20-480c-9edb-c8cb30603cb8 # Style One Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6ac4e092-916e-4699-8e6f-2cbfeb12dd69
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3f0fc869-abab-4809-83cb-4804013ac713 # Style One Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8aedf50c-43b4-4448-aff8-b888eb79177b
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9f6531ad-88af-4137-99a6-15a7b7a9dd51 # Style One Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0abd568d-73e6-4ca9-b9fe-8be50d7b28de
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e002b8b3-446b-45ca-8eb2-38ef159e9919 # Style One BG Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 75f55894-3336-4841-98b8-4fcc47753809
+            userCondition: null
+            warning: null
+            width: 100
+        name: One
+        uid: 19f69ecb-53d2-4eb4-a80a-47d80cd162e6
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ec565f82-1fc1-404f-a28c-8534ba0fe1f6 # Style Two Matrix
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1083a28d-e09b-42ef-9818-9f5ba496683f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Two
+        uid: ff86af4a-56b2-4a1b-9d9e-292885c3a422
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f89c1aa7-8c8e-44f6-a609-1c87f95d517a # Style Three Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a969c3fc-af25-46a3-bc6a-63f8e1e33380
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3a233f41-129b-482b-82c0-b37d9513508d # Style Three Text Bold
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 13fd6940-2169-40c7-ac56-f95ad04f042a
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d7f05bf0-5592-428f-ae47-3a27c9f7cf39 # Style Three Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9d81cd84-eb0d-4fad-a9e6-d59f6d14603c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6c68f10b-f403-4152-bf72-efc2d896cf4e # Style Three Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 908243e4-28ee-496b-9a2a-9822bf434035
+            userCondition: null
+            warning: null
+            width: 100
+        name: Three
+        uid: cf0cfc38-fae3-435e-9faa-78a03aa75ce2
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: a4e6d74d-d154-4eeb-9700-cb668d206f43 # Style Four title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c790731c-7104-4145-a630-33af97325aff
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 5d199612-68da-4dc7-b52f-beb7a567ab2b # Style Four Text 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e7113905-9954-43ab-924a-cbcb24b0e2a5
+            userCondition: null
+            warning: null
+            width: 100
+        name: Four
+        uid: c3e3b393-71cd-4d60-bcb8-abf9b8b50c35
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9c8f2362-5366-49fe-aa97-9bffefe2770a # What to Expect Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 07b9fc28-2666-44f5-a1bf-64ef34b53722
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 77d908c2-264d-4aff-9094-d72feb9be2ad # What to expect image 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 1d039d65-50d2-4180-a568-f4737624b311
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 404bd0ae-9bda-40d1-9caa-bd3084d4579b # What to expect
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0748b8eb-ba96-488a-898a-1efa7e439a3a
+            userCondition: null
+            warning: null
+            width: 100
+        name: Five
+        uid: da9d4b66-5443-4dae-aa03-0cac50f2e326
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e9fddc4a-fb16-4c1c-afc2-3807def662a8 # FAQs
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6705b966-d158-4334-9352-999e8d0970c3
+            userCondition: null
+            warning: null
+            width: 100
+        name: FAQ
+        uid: f1ebb12a-8aca-484b-ae69-43ce7da7a098
+        userCondition: null
+handle: extractionsWisdomTeeth
+hasTitleField: false
+name: 'Extractions & Wisdom Teeth'
+section: 19b76073-df98-4d44-907f-433ea8dcc491 # Extractions & Wisdom Teeth
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

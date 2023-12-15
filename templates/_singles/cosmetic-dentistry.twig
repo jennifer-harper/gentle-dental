@@ -1,0 +1,27 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "cosmetic" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %}
+{% set page = craft.entries().section('cosmeticDentistry').all() %}
+
+{% block content %}
+  {% for entry in page %}
+
+    {% include '_partials/_services/style-one.twig' %}
+    {% embed '_partials/_services/style-three.twig' %}
+      {% block wrapper %} pad-top pad-lg{% endblock %}
+      {% block copy %} pad-btm  {% endblock %}
+      {% block visual %} img-align-end  {% endblock %}
+    {% endembed %}
+    {% include '_partials/_services/style-two.twig' %}
+
+    {% include '_partials/_services/style-four.twig' %}
+
+    {% include '_partials/_services/style-five.twig' %}
+
+
+    {% include '_partials/_services/faqs.twig' %}
+
+  {% endfor %}
+{% endblock %}
+

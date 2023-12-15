@@ -370,6 +370,7 @@ nav {
     .list-item {
       display: flex;
       justify-content: flex-end;
+      flex-wrap: wrap;
       padding-bottom: 0;
     }
   }
@@ -533,6 +534,8 @@ nav {
 }
 
 //page specific
+.dental-implants,
+.dental-crowns,
 .periodontal{
   .style-three{
     flex-direction: column-reverse;

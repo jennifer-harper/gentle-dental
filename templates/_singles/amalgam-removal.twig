@@ -1,0 +1,27 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "amalgam" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %}
+{% set page = craft.entries().section('amalgamRemoval').all() %}
+
+{% block content %}
+  {% for entry in page %}
+
+    {% include '_partials/_services/style-one.twig' %}
+
+    {% include '_partials/_services/style-two.twig' %}
+
+
+    {% embed '_partials/_services/style-three.twig' %}
+      {% block copy %} pad-btm  pad-top cont-align-end{% endblock %}
+      {% block visual %} pad-sides pad-btm no-left{% endblock %}
+    {% endembed %}
+    
+
+    {% include '_partials/_services/style-five.twig' %}
+
+    {% include '_partials/_services/faqs.twig' %}
+
+  {% endfor %}
+{% endblock %}
+

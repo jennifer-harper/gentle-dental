@@ -1,0 +1,245 @@
+fieldLayouts:
+  4bcf87fb-a8a6-4702-b01e-d7b123d8352b:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c21c1a20-130a-440c-b597-febee95ab6e1
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 90c9b16f-c7c3-4dd9-96ca-aa26cf907067 # Meta Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 72ef7492-d57d-455a-a68c-2e32f2616330
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 52ccab6c-5ac2-4dec-877f-925f10f14183
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e82dbb37-5c20-480c-9edb-c8cb30603cb8 # Style One Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 73d429aa-0284-4476-8de2-03401c3dc2cf
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3f0fc869-abab-4809-83cb-4804013ac713 # Style One Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a906dc93-bb64-410a-90ed-c88f10d1c5dd
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9f6531ad-88af-4137-99a6-15a7b7a9dd51 # Style One Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c8d36f75-7308-408f-a4a7-b5d85963c645
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e002b8b3-446b-45ca-8eb2-38ef159e9919 # Style One BG Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: db8c546e-f21c-4aae-b05c-120470dd0686
+            userCondition: null
+            warning: null
+            width: 100
+        name: One
+        uid: 4fd21d61-975d-4540-a5ad-50558832d57b
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ec565f82-1fc1-404f-a28c-8534ba0fe1f6 # Style Two Matrix
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 241d8fc1-39a4-405b-8bb0-a1a7149821d0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Two
+        uid: 2677d187-776b-4bc4-84db-3017e791b5cc
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: f89c1aa7-8c8e-44f6-a609-1c87f95d517a # Style Three Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f71f6d73-ba20-4d25-b4d7-4d442696cc63
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3a233f41-129b-482b-82c0-b37d9513508d # Style Three Text Bold
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0a3f1a5d-0018-40f0-83e2-3c7ae2d7d107
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: d7f05bf0-5592-428f-ae47-3a27c9f7cf39 # Style Three Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e4b82f8b-8fe1-4736-93e3-20bf3a9710c7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 6c68f10b-f403-4152-bf72-efc2d896cf4e # Style Three Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2b83ce0e-3e5c-4505-97cf-7602e5b536c0
+            userCondition: null
+            warning: null
+            width: 100
+        name: Three
+        uid: 7069bb9d-24f2-418f-b630-05c97f453ad3
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 9c8f2362-5366-49fe-aa97-9bffefe2770a # What to Expect Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 3ed97e82-80f9-4345-be3f-49fd854eb496
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 77d908c2-264d-4aff-9094-d72feb9be2ad # What to expect image 
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b699293d-2f36-47c6-956e-596ffdee8233
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 404bd0ae-9bda-40d1-9caa-bd3084d4579b # What to expect
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2d2d606e-cc3e-408a-bb4e-85a53c9b4ccb
+            userCondition: null
+            warning: null
+            width: 100
+        name: Five
+        uid: 13aa7244-e4e9-4e01-af7f-d635881390e9
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e9fddc4a-fb16-4c1c-afc2-3807def662a8 # FAQs
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6ed9523a-941d-4b1c-9d01-b466ecf116db
+            userCondition: null
+            warning: null
+            width: 100
+        name: FAQ
+        uid: ac02f71e-86f1-4c35-9aab-cc86fe2897c9
+        userCondition: null
+handle: amalgamRemoval
+hasTitleField: false
+name: 'Amalgam Removal'
+section: 5e64048a-c6bf-4933-811f-51e93b2efbb0 # Amalgam Removal
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site
