@@ -412,6 +412,9 @@ nav {
   padding-top:$lg;
   @media #{$mq-medium}{
     padding-top:0;
+    &.half{
+      flex-basis:40%;
+    }
   }
 
   div{
@@ -436,6 +439,11 @@ nav {
   }
 
   &.w-33{
+    @media #{$mq-medium}{
+      &.half{
+        flex-basis:50%;
+      }
+    }
     div{
       @media #{$mq-figma}{
         width:33.333%;

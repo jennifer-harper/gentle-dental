@@ -424,6 +424,9 @@ nav .list-item li a:hover {
   .num-point {
     padding-top: 0;
   }
+  .num-point.half {
+    flex-basis: 40%;
+  }
 }
 .num-point div {
   width: 100%;
@@ -446,6 +449,11 @@ nav .list-item li a:hover {
   font-size: 2em;
   font-family: "Recoleta", sans-serif;
   margin-bottom: 0.8em;
+}
+@media (min-width: 64em) {
+  .num-point.w-33.half {
+    flex-basis: 50%;
+  }
 }
 @media (min-width: 94em) {
   .num-point.w-33 div {

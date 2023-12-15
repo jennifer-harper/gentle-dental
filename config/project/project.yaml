@@ -1,4 +1,4 @@
-dateModified: 1702595342
+dateModified: 1702598147
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: gentledental
@@ -22,14 +22,16 @@ meta:
     5bbbfde3-bc7c-4989-945a-e3a2fc58b195: 'Periodontal Treatment' # Periodontal Treatment
     5d199612-68da-4dc7-b52f-beb7a567ab2b: 'Style Four Text ' # Style Four Text 
     6c68f10b-f403-4152-bf72-efc2d896cf4e: 'Style Three Image' # Style Three Image
+    6dc51202-5dd8-4f99-8384-a017bb20cefe: 'Dental Implants' # Dental Implants
     6ee0aae4-fbcb-47a2-b227-8e1dee4b186b: 'Style Two Text Bold' # Style Two Text Bold
+    7c9457e8-e7ef-40a3-b3e1-5d46613f7fa3: 'Dental Bridges' # Dental Bridges
     8d9a31ba-d65e-493b-9959-8e5325e6a347: 'Style Two Title' # Style Two Title
     8e29f58e-cc00-49b7-a6c6-4b56b719e48f: 'Style Two group' # Style Two group
     9c8f2362-5366-49fe-aa97-9bffefe2770a: 'What to Expect Title' # What to Expect Title
     9d715b00-d450-4320-91a3-366dee9abad2: 'Exam & X-ray' # Exam & X-ray
     9f6531ad-88af-4137-99a6-15a7b7a9dd51: 'Style One Image' # Style One Image
     32c7d1f0-b971-4de2-b8d0-d501f8c8ff25: 'Common Image One' # Common Image One
-    42f94671-ae18-4442-99f1-31d2a19832a4: 'Children’s dentistry' # Children’s dentistry
+    42f94671-ae18-4442-99f1-31d2a19832a4: 'Children’s Dentistry' # Children’s Dentistry
     49d813de-a352-4603-b185-eb0db3d87c25: 'Style Two BG Image' # Style Two BG Image
     77d908c2-264d-4aff-9094-d72feb9be2ad: 'What to expect image ' # What to expect image 
     83e14727-f47c-4dcd-9d83-40fb787c7654: gentledental # gentledental
@@ -38,6 +40,7 @@ meta:
     404bd0ae-9bda-40d1-9caa-bd3084d4579b: 'What to expect' # What to expect
     609a7d98-d773-427c-ab93-928a27e885ec: home # home
     805ffc42-1721-4cde-a599-12ed2eee29ce: gentledental # gentledental
+    1856c310-64df-4909-811b-e5626d7f5d53: 'Dental Crowns' # Dental Crowns
     4503af49-dbfd-44e2-b013-c487224ab8b9: 'Exam & X-ray' # Exam & X-ray
     6559a804-b843-4bb6-bca5-e1ec814c419e: Simple # Simple
     55360e20-c905-4ab8-8fe7-605d96e419c6: 'Information Points' # Information Points
@@ -46,11 +49,13 @@ meta:
     a4e6d74d-d154-4eeb-9700-cb668d206f43: 'Style Four title' # Style Four title
     ad67a2d0-eda4-4bc6-9913-a2d7ce2139f5: 'Services Pages' # Services Pages
     b9d0f348-9d5f-4807-91d1-03fc9d0ffb44: Information # Information
+    b454ab12-0bbe-435c-89a3-478f946d7408: 'Dental Crowns' # Dental Crowns
     c15e110c-881a-4999-a99d-7d090f4505d8: 'FAQ Section' # FAQ Section
     c86c3c95-9d4b-440b-9ec3-a24c9d296c63: 'Emergency Dentist' # Emergency Dentist
     c96a663b-ebe2-4888-b62f-53c44fea8971: 'FAQ Answer' # FAQ Answer
-    c22979d9-6eb8-4f37-9a36-a616abd12bda: 'Children’s dentistry' # Children’s dentistry
+    c22979d9-6eb8-4f37-9a36-a616abd12bda: 'Children’s Dentistry' # Children’s Dentistry
     d7f05bf0-5592-428f-ae47-3a27c9f7cf39: 'Style Three Text' # Style Three Text
+    d88c0bdb-7982-450b-8508-48e17babd6f2: 'Dental Implants' # Dental Implants
     d89ae37b-0b78-4516-9204-5f3145b063d4: 'Services Pages' # Services Pages
     d364d3db-0381-4f81-be79-155c209a7739: 'Emergency Dentist' # Emergency Dentist
     e002b8b3-446b-45ca-8eb2-38ef159e9919: 'Style One BG Image' # Style One BG Image
@@ -62,6 +67,7 @@ meta:
     e82dbb37-5c20-480c-9edb-c8cb30603cb8: 'Style One Title' # Style One Title
     e2261ae6-7279-4b15-aeca-a29e038bde10: 'Periodontal Treatment' # Periodontal Treatment
     ec565f82-1fc1-404f-a28c-8534ba0fe1f6: 'Style Two Matrix' # Style Two Matrix
+    ef4492f8-f0eb-421f-a236-9f24da727822: 'Dental Bridges' # Dental Bridges
     f89c1aa7-8c8e-44f6-a609-1c87f95d517a: 'Style Three Title' # Style Three Title
 plugins:
   ckeditor:
