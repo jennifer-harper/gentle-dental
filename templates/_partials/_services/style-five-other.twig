@@ -1,0 +1,31 @@
+    <div class=" pad-all style-five other">
+      <div class="underlined-heading">
+        {% if entry.wteOtherTitle %}
+          <h2 class="max-60">{{entry.wteOtherTitle}}</h2>
+        {% endif %}
+      </div>
+
+      <div class="flex-wrap">
+        <div class="half  right-align intro ">
+          {% if entry.wteOtherText %}
+            {{entry.wteOtherText}}
+          {% endif %}
+        </div>
+
+
+
+        <div class=" half flex-wrap wrap num-point {% block class %}  {% endblock %}">
+          {% for block in entry.wteOtherMatrix %}
+            {% if block.type == 'informationPoints' %}
+              <div>
+                {% set indexDisplay = loop.index < 10 ? '0' ~ loop.index : loop.index %}
+                <p class="num-heading">{{ indexDisplay }}</p>
+                {% if block.information %}
+                  {{block.information}}
+                {% endif %}
+              </div>
+            {% endif %}
+          {% endfor %}
+        </div>
+      </div>
+    </div>

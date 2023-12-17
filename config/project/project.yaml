@@ -1,4 +1,4 @@
-dateModified: 1702799960
+dateModified: 1702851901
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: gentledental
@@ -14,10 +14,12 @@ fs:
 meta:
   __names__:
     0bd8f6b4-bd52-4ffb-b619-562c7c1a5898: Veneers # Veneers
+    0f632b9d-cae3-4cb4-ac04-314f858aae42: 'WTE Other Title' # WTE Other Title
     0fab3bf0-6361-445a-b238-c15ed8c4f5f8: home # home
     01ada6c2-be55-4a8d-91ec-5ecd5b108b90: 'Style Two Image' # Style Two Image
     1b4f98b2-b531-4e97-856c-a7818fdb427d: 'FAQ Question' # FAQ Question
     1b7bccb5-7a7e-4c21-b44c-1c2f097e9742: 'Hygiene Treatment ' # Hygiene Treatment 
+    1efd98b6-0a32-41cf-8c3e-0b6cf7e61985: 'Style Six Text Bold' # Style Six Text Bold
     2d1ed3d8-c821-4adc-8e4b-91c606b26465: 'Teeth Whitening' # Teeth Whitening
     3a233f41-129b-482b-82c0-b37d9513508d: 'Style Three Text Bold' # Style Three Text Bold
     3f0fc869-abab-4809-83cb-4804013ac713: 'Style One Text' # Style One Text
@@ -26,8 +28,10 @@ meta:
     5e64048a-c6bf-4933-811f-51e93b2efbb0: 'Amalgam Removal' # Amalgam Removal
     6c68f10b-f403-4152-bf72-efc2d896cf4e: 'Style Three Image' # Style Three Image
     6dc51202-5dd8-4f99-8384-a017bb20cefe: 'Dental Implants' # Dental Implants
+    6e0953c4-a259-4784-bcc9-db5a53d28bf0: Information # Information
     6ee0aae4-fbcb-47a2-b227-8e1dee4b186b: 'Style Two Text Bold' # Style Two Text Bold
     7c9457e8-e7ef-40a3-b3e1-5d46613f7fa3: 'Dental Bridges' # Dental Bridges
+    7d58531e-2049-4843-ace7-fa736ce740dd: 'Root Canal Therapy' # Root Canal Therapy
     8d9a31ba-d65e-493b-9959-8e5325e6a347: 'Style Two Title' # Style Two Title
     8e29f58e-cc00-49b7-a6c6-4b56b719e48f: 'Style Two group' # Style Two group
     9c8f2362-5366-49fe-aa97-9bffefe2770a: 'What to Expect Title' # What to Expect Title
@@ -37,6 +41,7 @@ meta:
     30b3c509-d7dd-4236-89ac-0c5eb8d3e1e8: Veneers # Veneers
     32c7d1f0-b971-4de2-b8d0-d501f8c8ff25: 'Common Image One' # Common Image One
     42f94671-ae18-4442-99f1-31d2a19832a4: 'Children’s Dentistry' # Children’s Dentistry
+    43d169b0-ea27-4c52-9908-62021354d2b3: 'WTE Other Matrix' # WTE Other Matrix
     49d813de-a352-4603-b185-eb0db3d87c25: 'Style Two BG Image' # Style Two BG Image
     77d908c2-264d-4aff-9094-d72feb9be2ad: 'What to expect image ' # What to expect image 
     83e14727-f47c-4dcd-9d83-40fb787c7654: gentledental # gentledental
@@ -51,14 +56,18 @@ meta:
     1856c310-64df-4909-811b-e5626d7f5d53: 'Dental Crowns' # Dental Crowns
     4503af49-dbfd-44e2-b013-c487224ab8b9: 'Exam & X-ray' # Exam & X-ray
     6559a804-b843-4bb6-bca5-e1ec814c419e: Simple # Simple
+    9440fb59-9a0c-4447-99cc-7650bc984f49: 'WTE Other Text' # WTE Other Text
+    47434d50-7052-4bd6-ba93-3fcf9e79eb9a: 'Style Six Text' # Style Six Text
     47648a26-21e3-4737-b6b8-52276e9c1238: Dentures # Dentures
     55360e20-c905-4ab8-8fe7-605d96e419c6: 'Information Points' # Information Points
     76557e3e-f62b-49ba-a346-41bfbc961d37: 'Cosmetic Dentistry' # Cosmetic Dentistry
+    486804e2-2852-455e-8538-94ed3c5220cb: Fillings # Fillings
     678567e8-7ba0-4a2c-8f98-5e1811aff168: 'Teeth Whitening' # Teeth Whitening
     6494302b-0e12-4f9d-9edb-4e0069a82e40: other # other
     57989829-02c2-4417-b994-0a51afbfd3e5: other # other
     a4e6d74d-d154-4eeb-9700-cb668d206f43: 'Style Four title' # Style Four title
     ad67a2d0-eda4-4bc6-9913-a2d7ce2139f5: 'Services Pages' # Services Pages
+    b2a91915-e231-478c-a98b-785b01ed7563: 'Style Six Image' # Style Six Image
     b9d0f348-9d5f-4807-91d1-03fc9d0ffb44: Information # Information
     b454ab12-0bbe-435c-89a3-478f946d7408: 'Dental Crowns' # Dental Crowns
     c0c99712-082d-4260-bc9d-9068d7fe6846: Dentures # Dentures
@@ -70,17 +79,21 @@ meta:
     d88c0bdb-7982-450b-8508-48e17babd6f2: 'Dental Implants' # Dental Implants
     d89ae37b-0b78-4516-9204-5f3145b063d4: 'Services Pages' # Services Pages
     d364d3db-0381-4f81-be79-155c209a7739: 'Emergency Dentist' # Emergency Dentist
+    dcb1728e-5311-483d-a936-e5dd577ac435: 'Information Points' # Information Points
     e002b8b3-446b-45ca-8eb2-38ef159e9919: 'Style One BG Image' # Style One BG Image
     e1a24ec9-d230-4a95-bb50-3aad81ca10d0: Common # Common
     e4cf4cf0-9fac-4d90-a42f-2bdb6eb23e8f: 'Just Paragrpah' # Just Paragrpah
+    e5e38de3-800c-4d63-8202-e11a579c2ffb: Fillings # Fillings
     e9fddc4a-fb16-4c1c-afc2-3807def662a8: FAQs # FAQs
     e17d1087-9a94-4873-a162-18d74f187ea1: Images # Images
     e70e3f4c-23b4-4dfd-9ba0-c0d7a0ec3886: 'Style Two Text' # Style Two Text
     e82dbb37-5c20-480c-9edb-c8cb30603cb8: 'Style One Title' # Style One Title
     e2261ae6-7279-4b15-aeca-a29e038bde10: 'Periodontal Treatment' # Periodontal Treatment
     ec565f82-1fc1-404f-a28c-8534ba0fe1f6: 'Style Two Matrix' # Style Two Matrix
+    ef57d1b3-6c83-4a76-aeca-460bf8d591ea: 'Style Six Title' # Style Six Title
     ef4492f8-f0eb-421f-a236-9f24da727822: 'Dental Bridges' # Dental Bridges
     f89c1aa7-8c8e-44f6-a609-1c87f95d517a: 'Style Three Title' # Style Three Title
+    f120877b-9fe9-4afe-974a-f682dc330ab5: 'Root Canal Therapy' # Root Canal Therapy
 plugins:
   ckeditor:
     edition: standard

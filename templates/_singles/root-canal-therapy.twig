@@ -1,15 +1,17 @@
 {% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "hygiene" } %} 
+{% set bodyAttributes ={ class: "root-canal" } %} 
 {% set docTitle = entry.title %} 
 {% set metaDesc = entry.metaDescription %}
-{% set page = craft.entries().section('hygieneTreatment').all() %}
+{% set page = craft.entries().section('rootCanalTherapy').all() %}
 
 {% block content %}
   {% for entry in page %}
 
     {% include '_partials/_services/style-one.twig' %}
-
     {% include '_partials/_services/style-two.twig' %}
+    {% embed '_partials/_services/style-five-other.twig' %}
+     {% block class %} w-33 {% endblock %}
+    {% endembed %}
 
     {% embed '_partials/_services/style-three.twig' %}
       {% block wrapper %} pad-top pad-lg{% endblock %}
@@ -17,12 +19,8 @@
       {% block visual %} img-align-end  {% endblock %}
     {% endembed %}
 
-    {% include '_partials/_services/style-four.twig' %}
-
     {% embed '_partials/_services/style-five.twig' %}
-    {% block class %} w-33 {% endblock %}
     {% endembed %}
-
     {% include '_partials/_services/faqs.twig' %}
 
   {% endfor %}
