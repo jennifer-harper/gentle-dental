@@ -1,4 +1,4 @@
-dateModified: 1702602515
+dateModified: 1702799960
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: gentledental
@@ -94,8 +94,9 @@ system:
   edition: solo
   live: true
   name: gentledental
+  retryDuration: null
   schemaVersion: 4.5.3.0
-  timeZone: America/Los_Angeles
+  timeZone: Pacific/Auckland
 users:
   allowPublicRegistration: false
   defaultGroup: null
