@@ -1,0 +1,54 @@
+
+<div class="flex-wrap">
+  <div class="half bg-50 pad-all just-cont-between">
+      <div class="max-60-img cont-just-end">
+          {% set image = entry.sliderOneImage.one() %}
+          {% if image %}
+            <img src="{{ image.getUrl() }}" alt="{{ image.alt}}">
+          {% endif %}    
+        </div>
+
+      {% if entry.sliderOneTitle %}
+      <h2>{{entry.sliderOneTitle }}</h2>
+      {% endif %}
+  </div>
+
+  <div class="half swiper slider-one bg-200">
+    <div class="swiper-wrapper">
+      {% for block in entry.sliderOneMatrix %}
+      {% if block.type == 'informationPoints' %}
+
+      <div class="swiper-slide pad-top pad-btm ">
+        <div class="info-points just-cont-between pad-sides">
+          <div>
+            {% if block.infoTitle %}
+              <h3>{{block.infoTitle}}</h3>
+            {% endif %}
+            {% if block.information %}
+              {{block.information}}
+            {% endif %}
+          </div>
+          <div>
+            {% set image = block.infoImage.one() %}
+            {% if image %}
+              <img src="{{ image.getUrl() }}" alt="{{ image.alt}}">
+            {% endif %} 
+          </div>
+        </div>
+
+      </div>
+
+      {% endif %}
+      {% endfor %}
+    </div>
+      <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+  </div>
+
+
+
+
+</div>    
+
+

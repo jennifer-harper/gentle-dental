@@ -169,6 +169,7 @@ h3{font-size: calc($base-font-size*1.8);}
 .bg-700{background-color: $accent-700;}
 .bg-500{background-color: $accent-500;}
 .bg-300{background-color: $accent-300;}
+.bg-200{background-color: $accent-200;}
 .bg-100{background-color: $accent-100;}
 .bg-50{background-color: $accent-50;}
  
@@ -217,6 +218,9 @@ svg {
   @media #{$mq-medium} {
     max-width:60%
   }
+}
+.max-60-img img{
+  max-width:60%
 }
 
 
@@ -282,7 +286,7 @@ svg {
 
 
 
-
+.cont-just-end,
 .just-cont-center-row,
 .img-align-item-center,
 .cont-align-end,
@@ -307,6 +311,9 @@ svg {
   justify-content: flex-end;
 }
 
+.cont-just-end{
+  justify-content: flex-end;
+}
 .just-cont-between{
   flex-direction: column;
   justify-content: space-between;
@@ -393,14 +400,39 @@ nav {
 
 
 ///pages and sty;es
+.swiper{
+  width:100%;
+}
+.slider-one{
+  .swiper-button-prev, .swiper-button-next{
+    top:calc(100% - 30px);
+  }
+  .swiper-slide{
+    h3{
+      margin-bottom: $base-font-size;
+    }
+    img{
+      max-width:50%
+    }
+    .info-points{
+      height:100%;
+      @media #{$mq-medium}{
+        border-right:1px solid $accent-900;
+      }
+    }
+  }
+}
 
 
 //style block 5
 .style-five{
+  &.pad-all{
+    padding-bottom:4vw;
+  }
+
   > .flex-wrap{
     @media #{$mq-medium}{
       padding-top:4%;
-      padding-bottom:2%;
     }
   }
   .max-img-one{
@@ -412,6 +444,7 @@ nav {
     @media #{$mq-medium} {
       padding-left:4%;
       padding-right:4%;
+      padding-bottom:4%;
       img{
         max-width:35vw
       }
@@ -422,7 +455,7 @@ nav {
 
 
 
-// styles five
+// styles five and style 7
 .num-point{
   padding-top:$lg;
   @media #{$mq-medium}{
@@ -435,10 +468,12 @@ nav {
   div{
     width:100%;
     padding:$base-font-size*2.4;
-
     padding-top: 0;
     @media #{$mq-small}{
       width:50%;
+    }
+    @media #{$mq-medium}{
+      padding-right:0;
     }
     @media #{$mq-xxlarge}{
       padding:$base-font-size*1.5;
@@ -451,6 +486,9 @@ nav {
     font-size: $base-font-size*2;
     font-family: $header-font;
     margin-bottom: $base-font-size*0.8;
+    span{
+      color:$white;
+    }
   }
 
   &.w-33{
@@ -465,7 +503,37 @@ nav {
       }
     }
   }
+
+  &.side-border{
+      @media #{$mq-small}{
+        div{
+          border-right:1px solid $accent-700;
+          padding-right:$base-font-size*2.4;
+          margin-bottom: $base-font-size*4;
+          padding-bottom: 0;
+        }
+        div:nth-of-type(even){
+          border-right-width: 0;
+        }
+      }
+      @media #{$mq-medium}{
+        div{
+          width:33.333%;
+        }
+        div:nth-of-type(even){
+          border-right-width: 1px;
+        }
+        div:nth-of-type(3n){
+          border-right-width: 0;
+        }
+      }
+    }
 }
+
+
+
+
+
 
 
 
@@ -497,57 +565,104 @@ nav {
   }
 }
 
-//style block 6
+
+
+//style block 6 fillings page
 .style-six{
   .intro p{
     margin-top:0
   }
-  .img-style-one{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    @media #{$mq-medium} {
-      justify-content: flex-end;
-    }
-    img{
-      max-width:65%;
-      margin-bottom: $sm;
-      @media #{$mq-medium} {
-        margin-bottom: 0;
-      }
-    }
-  }
-  .text-style-one{
-  padding-left:$sm;
-  padding-right:$sm;
-  }
 
-  .img-style-two{
-    div{
+  .visual{
+
+    @media #{$mq-small}{
       display: flex;
+      flex-direction: row;
     }
-    div:first-of-type{
+
+    .img-style-one{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      @media #{$mq-medium} {
+        justify-content: flex-end;
+      }
       img{
-        margin-top: 20px;
-        max-width: 40%;
+        max-width:65%;
+        margin-bottom: $sm;
         @media #{$mq-medium} {
-          margin-top: 0;
+          margin-bottom: 0;
         }
       }
     }
 
-    div:last-of-type{
-    justify-content: flex-end;
-      img{
-      margin-top: -40px;
-        max-width: 50%;
+  
+    .text-style-one{
+    padding-left:$sm;
+    padding-right:$sm;
+    }
+  
+    .img-style-two{
+      div{
+        display: flex;
+      }
+      div:first-of-type{
+        img{
+          margin-top: 20px;
+          max-width: 40%;
+          @media #{$mq-medium} {
+            margin-top: 0;
+          }
+        }
+      }
+  
+      div:last-of-type{
+      justify-content: flex-end;
+        img{
+        margin-top: -40px;
+          max-width: 50%;
+        }
       }
     }
   }
+
+
+  .border-top{
+    border-top:1px solid $accent-700;
+    padding-top:$md;
+  }
+
+  .wrap{
+    @media #{$mq-large}{
+flex-wrap: nowrap;
+    }
+  }
+
+  .info-points{
+    padding-bottom:$base;
+
+    p{
+      margin-bottom:0;
+    }
+
+    @media #{$mq-small}{
+      width:50%;
+      padding-right:$base-font-size*4;
+    }
+    @media #{$mq-large}{
+      padding-bottom:0;
+      padding-right:$base-font-size*4;
+      &:last-of-type{
+        padding-right:0;
+      }
+    }
+
+    h3{
+      margin-bottom:$base-font-size
+    }
+  }
+
 }
-
-
-
 
 
 //faqs
@@ -604,6 +719,9 @@ nav {
   }
 }
 
+
+
+
 //page specific
 .dental-implants,
 .dental-crowns,
@@ -642,6 +760,7 @@ nav {
       }
     }
   }
-
 }
+
+
 

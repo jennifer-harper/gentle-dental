@@ -1,0 +1,19 @@
+columnSuffix: ktohsgao
+contentColumnType: text
+fieldGroup: b08debf6-b629-48c9-940e-e27798a69ff4 # Sliders
+handle: sliderOneTitle
+instructions: null
+name: 'Slider One Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

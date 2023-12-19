@@ -1,0 +1,82 @@
+field: 7ba9f6e6-56ec-4f5a-9c3f-e7654139bd14 # Style Seven matrix
+fieldLayouts:
+  194315ba-d58b-4890-85a5-df5f89ea7122:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e8153262-0a9f-4ded-b8c1-10b4d9581222 # Information Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: db8daa31-92cd-489a-9601-6e60475176a6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2b772ce1-3c56-4bd5-a89a-dceaf3e5e8e8 # Information
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 47f2e88a-1fc6-40f7-b3fc-a6acfa8ccf19
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 1d8c0f83-0fbe-4204-94e1-8867f32adeb5
+        userCondition: null
+fields:
+  2b772ce1-3c56-4bd5-a89a-dceaf3e5e8e8: # Information
+    columnSuffix: sjaqmntl
+    contentColumnType: text
+    fieldGroup: null
+    handle: information
+    instructions: null
+    name: Information
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: e4cf4cf0-9fac-4d90-a42f-2bdb6eb23e8f # Just Paragrpah
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+  e8153262-0a9f-4ded-b8c1-10b4d9581222: # Information Title
+    columnSuffix: uvncyknt
+    contentColumnType: text
+    fieldGroup: null
+    handle: informationTitle
+    instructions: null
+    name: 'Information Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: informationPoints
+name: 'Information Points'
+sortOrder: 1

@@ -1,0 +1,24 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "braces" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %}
+{% set page = craft.entries().section('gentleBraces').all() %}
+
+{% block content %}
+  {% for entry in page %}
+
+    {% include '_partials/_services/style-one.twig' %}
+
+    {% include '_partials/_services/style-two.twig' %}
+
+    {% embed '_partials/_services/style-seven.twig' %}
+    {% block class %} w-33 side-border{% endblock %}
+    {% endembed %}
+
+   {% include '_partials/_sliders/style-one.twig' %}
+    {% include '_partials/_services/style-five.twig' %}
+    {% include '_partials/_services/faqs.twig' %}
+
+  {% endfor %}
+{% endblock %}
+

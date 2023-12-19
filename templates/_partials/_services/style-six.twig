@@ -1,41 +1,58 @@
-    {% set image = entry.styleSixImage.all() %}
-    <div class="dark flex-wrap bg-700 style-six">
-      <div class="pad-all pad-lg align-items-center text-center">
-        {% if entry.styleSixTitle %}
-          <h2>{{entry.styleSixTitle}}</h2>
+{% set image = entry.styleSixImage.all() %}
+<div class="dark  bg-800 style-six pad-all">
+
+  <div class="align-items-center text-center pad-btm">
+    {% if entry.styleSixTitle %}
+      <h2>{{entry.styleSixTitle}}</h2>
+    {% endif %}
+
+    <div class="pad-top flex-wrap just-cont-center-row visual">
+
+      <div class="third {% block styleOne %}  {% endblock %}">
+        {% if image|length >= 2 %}
+        <img src="{{ image[0].getUrl() }}" alt="{{ image[0].alt }}">
         {% endif %}
+      </div>
 
-        <div class="pad-top pad-btm flex-wrap just-cont-center-row">
+      <div class="third text-style-one just-cont-center">
+        <div class="intro">
+          {% if entry.styleSixTextBold %}
+            {{entry.styleSixTextBold}}
+          {% endif %}
+        </div>
+          {% if entry.styleSixText %}
+            {{entry.styleSixText}}
+          {% endif %}
+      </div>
 
-          <div class="third {% block styleOne %}  {% endblock %}">
-            {% if image|length >= 2 %}
-            <img src="{{ image[0].getUrl() }}" alt="{{ image[0].alt }}">
-            {% endif %}
-          </div>
-
-          <div class="third text-style-one just-cont-center">
-            <div class="intro">
-              {% if entry.styleSixTextBold %}
-                {{entry.styleSixTextBold}}
-              {% endif %}
-            </div>
-              {% if entry.styleSixText %}
-                {{entry.styleSixText}}
-              {% endif %}
-          </div>
-
-          <div class="third {% block styleTwo %}  {% endblock %}">
-            <div>
-              {% if image|length >= 2 %}
-                <img src="{{ image[1].getUrl() }}" alt="{{ image[1].alt }}">
-              {% endif %}
-            </div>
-            <div>
-              {% if image|length >= 2 %}
-                <img src="{{ image[2].getUrl() }}" alt="{{ image[2].alt }}">
-              {% endif %}
-            </div>
-          </div>
+      <div class="third {% block styleTwo %}  {% endblock %}">
+        <div>
+          {% if image|length >= 2 %}
+            <img src="{{ image[1].getUrl() }}" alt="{{ image[1].alt }}">
+          {% endif %}
+        </div>
+        <div>
+          {% if image|length >= 2 %}
+            <img src="{{ image[2].getUrl() }}" alt="{{ image[2].alt }}">
+          {% endif %}
         </div>
       </div>
     </div>
+  </div>
+
+  <div class="dark flex-wrap wrap style-six border-top">
+    {% for block in entry.styleSixMatrix %}
+      {% if block.type == 'informationPoints' %}
+        <div class="info-points l">
+          {% if block.infoTitle %}
+            <h3>{{block.infoTitle}}</h3>
+          {% endif %}
+          {% if block.information %}
+            {{block.information}}
+          {% endif %}
+        </div>
+      {% endif %}
+    {% endfor %}
+  </div>
+</div>
+

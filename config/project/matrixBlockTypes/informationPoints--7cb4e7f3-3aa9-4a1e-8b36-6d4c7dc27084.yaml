@@ -1,0 +1,82 @@
+field: 2b27cfe9-6685-4fef-9a1e-d4d6ecfbd2f9 # Style Six Matrix
+fieldLayouts:
+  d95eb446-942d-460d-b5cb-ca84e6b8482f:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 2739eb26-b42d-4d73-a18f-db8129fb8d68 # Info Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a576e107-7977-4109-9459-44f4300adaad
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c5b9823f-d2a1-46cc-a82e-2dc668e61646 # Information
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b2467645-bd85-476f-9410-43fe558035a7
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ff9799c8-fe03-41b3-aba3-fb6bb9437a75
+        userCondition: null
+fields:
+  2739eb26-b42d-4d73-a18f-db8129fb8d68: # Info Title
+    columnSuffix: qphltrap
+    contentColumnType: text
+    fieldGroup: null
+    handle: infoTitle
+    instructions: null
+    name: 'Info Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c5b9823f-d2a1-46cc-a82e-2dc668e61646: # Information
+    columnSuffix: jkorgcrk
+    contentColumnType: text
+    fieldGroup: null
+    handle: information
+    instructions: null
+    name: Information
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: e4cf4cf0-9fac-4d90-a42f-2bdb6eb23e8f # Just Paragrpah
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+handle: informationPoints
+name: 'Information Points'
+sortOrder: 1
