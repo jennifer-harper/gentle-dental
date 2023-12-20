@@ -43,18 +43,6 @@ fieldLayouts:
             width: 100
           -
             elementCondition: null
-            fieldUid: 01ada6c2-be55-4a8d-91ec-5ecd5b108b90 # Style Two Image
-            instructions: null
-            label: null
-            required: false
-            tip: null
-            type: craft\fieldlayoutelements\CustomField
-            uid: 5306b93a-c96f-45c1-8e20-11e0088842bf
-            userCondition: null
-            warning: null
-            width: 100
-          -
-            elementCondition: null
             fieldUid: 49d813de-a352-4603-b185-eb0db3d87c25 # Style Two BG Image
             instructions: null
             label: null
@@ -69,55 +57,6 @@ fieldLayouts:
         uid: c9ca0789-fdeb-47c4-8087-8bdecfef6c19
         userCondition: null
 fields:
-  01ada6c2-be55-4a8d-91ec-5ecd5b108b90: # Style Two Image
-    columnSuffix: null
-    contentColumnType: string
-    fieldGroup: null
-    handle: styleTwoImage
-    instructions: null
-    name: 'Style Two Image'
-    searchable: false
-    settings:
-      allowSelfRelations: false
-      allowSubfolders: false
-      allowUploads: true
-      allowedKinds:
-        - image
-      branchLimit: null
-      defaultUploadLocationSource: 'volume:e17d1087-9a94-4873-a162-18d74f187ea1' # Images
-      defaultUploadLocationSubpath: null
-      localizeRelations: false
-      maintainHierarchy: false
-      maxRelations: 1
-      minRelations: null
-      previewMode: full
-      restrictFiles: true
-      restrictLocation: false
-      restrictedDefaultUploadSubpath: null
-      restrictedLocationSource: 'volume:e17d1087-9a94-4873-a162-18d74f187ea1' # Images
-      restrictedLocationSubpath: null
-      selectionCondition:
-        __assoc__:
-          -
-            - elementType
-            - craft\elements\Asset
-          -
-            - fieldContext
-            - global
-          -
-            - class
-            - craft\elements\conditions\assets\AssetCondition
-      selectionLabel: null
-      showSiteMenu: true
-      showUnpermittedFiles: false
-      showUnpermittedVolumes: false
-      sources: '*'
-      targetSiteId: null
-      validateRelatedElements: false
-      viewMode: large
-    translationKeyFormat: null
-    translationMethod: site
-    type: craft\fields\Assets
   6ee0aae4-fbcb-47a2-b227-8e1dee4b186b: # Style Two Text Bold
     columnSuffix: hgkdbusv
     contentColumnType: text

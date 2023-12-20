@@ -235,19 +235,11 @@ img {
   }
 }
 
-.sm-bg-img-svg {
-  width: 100%;
+.bg-cover {
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 100%;
-}
-
-.bg-img-svg {
-  width: 100%;
-  background-image: url("xx.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 50%;
-  background-size: 100%;
+  background-size: cover;
+  min-height: 300px;
 }
 
 svg {
@@ -370,13 +362,29 @@ svg {
 }
 
 header {
+  background-color: #233876;
   position: relative;
   z-index: 5;
+  position: fixed;
+  width: 100%;
+}
+
+.banner {
+  align-items: center;
+  justify-content: space-between;
+}
+.banner .logo img {
+  max-width: 200px;
+}
+.banner .bttn {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.banner p {
+  margin-bottom: 0;
 }
 
 nav {
-  position: fixed;
-  width: 100%;
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
@@ -432,11 +440,6 @@ nav .list-item li .dropdown-nav {
   left: 0;
   display: flex;
   flex-wrap: wrap;
-}
-@media (min-width: 64em) {
-  nav .list-item li .dropdown-nav {
-    position: absolute;
-  }
 }
 @media (min-width: 992px) {
   nav {

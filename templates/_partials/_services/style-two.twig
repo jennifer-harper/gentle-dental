@@ -4,7 +4,8 @@
 {% if block.type == 'styleTwoGroup' %}
 <div class="flex-wrap">
   {% set bgImgTwo = block.styleTwoBgImage.one() %}
-  <div class="half pad-sides pad-top sm-bg-img-svg bg-300 img-align-end" style="background-image: url('{{ bgImgTwo.getUrl() }}');">
+  
+  <div class="half pad-sides pad-top  bg-300 img-align-end bg-cover" style="background-image: url('{{ bgImgTwo.getUrl() }}');">
     {% set imageTwo = block.styleTwoImage.one() %}
     {% if imageTwo %}
       <img src="{{ imageTwo.getUrl() }}" alt="{{ imageTwo.alt}}">

@@ -210,16 +210,14 @@ img {
   }
 }
 
-.sm-bg-img-svg{
-  width:100%;
-  @include bg-img-pos(50% 50%, 100%);
+.bg-cover{
+  @include bg-img-pos(50% 50%, cover);
+  min-height:300px
 }
 
 
-.bg-img-svg{
-  width:100%;
-  @include bg-img(url("xx.jpg"),50% 50%, 100%);
-}
+
+
 
 svg {
   overflow: visible !important;
@@ -351,12 +349,28 @@ svg {
 ////navigation
 
 header{
+  background-color: $accent-900;
   position: relative;
   z-index: 5;
-}
-nav {
   position: fixed;
   width: 100%;
+}
+.banner{
+  align-items: center;
+  justify-content: space-between;
+  .logo img{
+    max-width:200px
+  }
+  .bttn{
+    margin-top:5px;
+    margin-bottom: 5px;
+  }
+  p{
+    margin-bottom: 0;
+  }
+}
+
+nav {
   background-color: #fff;
   display: flex;
   flex-wrap: wrap;
@@ -410,9 +424,9 @@ nav {
         left: 0;
         display: flex;
         flex-wrap: wrap;
-        @media #{$mq-medium}{
-          position: absolute;
-        }
+        // @media #{$mq-medium}{
+        //   position: absolute;
+        // }
       }
     }
 
