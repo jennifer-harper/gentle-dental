@@ -1,5 +1,15 @@
-@import url("https://fonts.cdnfonts.com/css/sweet-sans-pro");
-@import url("https://fonts.cdnfonts.com/css/recoleta");
+@font-face {
+  font-family: "Recoleta";
+  src: url("../fonts/recoleta-regular-webfont.woff2") format("woff2"), url("../fonts/recoleta-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Sweet Sans Pro";
+  src: url("../fonts/sweetsanspro-regular-webfont.woff2") format("woff2"), url("../fonts/sweetsanspro-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 *,
 *::before {
   box-sizing: border-box;
@@ -242,6 +252,7 @@ img {
 
 svg {
   overflow: visible !important;
+  z-index: 1;
 }
 
 /**
@@ -358,6 +369,11 @@ svg {
   width: 100%;
 }
 
+header {
+  position: relative;
+  z-index: 5;
+}
+
 nav {
   position: fixed;
   width: 100%;
@@ -395,12 +411,32 @@ nav .list-item li {
   text-align: center;
   display: block;
   float: none;
+  position: relative;
+}
+@media (min-width: 64em) {
+  nav .list-item li {
+    position: unset;
+  }
 }
 nav .list-item li a {
   color: #222;
 }
 nav .list-item li a:hover {
   color: red;
+}
+nav .list-item li .dropdown-nav {
+  display: none;
+  width: 100%;
+  background-color: #fff;
+  position: relative;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media (min-width: 64em) {
+  nav .list-item li .dropdown-nav {
+    position: absolute;
+  }
 }
 @media (min-width: 992px) {
   nav {
@@ -411,7 +447,7 @@ nav .list-item li a:hover {
   }
   nav .list-item {
     display: flex;
-    justify-content: flex-end;
+    justify-content: space-between;
     flex-wrap: wrap;
     padding-bottom: 0;
   }
@@ -728,6 +764,73 @@ nav .list-item li a:hover {
     text-align: right;
     max-width: 70%;
   }
+}
+
+.footer h2 {
+  font-size: 8vw;
+}
+.footer ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.footer ul li {
+  padding-right: 1em;
+}
+.footer ul li a {
+  color: #233876;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in;
+}
+.footer ul li a:hover {
+  color: #2cdcac;
+}
+@media (min-width: 64em) {
+  .footer ul {
+    justify-content: space-between;
+  }
+}
+@media (min-width: 64em) {
+  .footer .content {
+    padding-left: 6vw;
+  }
+}
+.footer .content div p {
+  text-transform: uppercase;
+  color: #1a56db;
+}
+.footer .content .mailing-list {
+  padding-bottom: 40px;
+  border-bottom: 1px solid #D1D5DB;
+}
+.footer .content .form-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.footer .content .form-content .forms {
+  width: 100%;
+  margin-right: 20px;
+}
+.footer .content .form-content input {
+  width: 100%;
+  border-width: 0;
+  background-color: transparent;
+}
+.footer .content .form-content .bttn {
+  margin-top: 0;
+}
+.footer .content .form-content .bttn p {
+  font-weight: bold;
+  color: #233876;
+}
+.footer .logo img {
+  max-width: 150px;
+}
+.footer ul li a svg {
+  margin-left: 20px;
 }
 
 /*# sourceMappingURL=styles.css.map */

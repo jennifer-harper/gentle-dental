@@ -1,0 +1,90 @@
+<div class="footer bg-100 pad-all">
+  <div class="text-center pad-btm">
+    <h2>Every Smile Tells A Story</h2>
+  </div>
+
+  <div class="flex-wrap">
+      <div class="half">
+          <div>
+            {% set footerImg = footerImage.commonImageOne.one() %}
+            <img src="{{ footerImg.getUrl()  }}" alt="{{footerImg.alt}}" />
+          </div>
+      </div>
+      <div class="half content just-cont-between">
+        <ul class="">
+          <li>
+              <a href="/about-us">About Us</a>
+          </li>
+          <li>
+              <a href="/Services">Services</a>
+          </li>
+          <li>
+              <a href="/gentle-team">Gentle Team</a>
+          </li>    
+          <li>
+              <a href="/blog">Blog</a>
+          </li>  
+          <li>
+            <a href="/https://www.smilestore.co.nz/" target="_blank">Smile Store</a>
+          </li> 
+        </ul>
+        <div class="mailing-list">
+          <p>Subscribe to our mailing list</p>
+          <div class="form-content">
+            <div class="forms">
+              {# <label for="email" class="_form-label">Email*</label> #}
+              <input type="text" id="email" name="email" placeholder="Sign up to our mailing list" required/>
+            </div>
+            <div class="bttn {% block class %} default {% endblock %}">
+              <a href={% block url %} '/contact' {% endblock %}>
+                <p>{% block title %}Submit {% endblock %}</p>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20" fill="none">
+                <path d="M15.8935 14.5061L15.8935 6.02087L4.1656 17.7488L2.75138 16.3346L14.4793 4.60665L5.99402 4.60665V2.60665H17.8935V14.5061L15.8935 14.5061Z" />
+                </svg>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+  </div>
+
+  <div class="flex-wrap pad-top">
+    <div class="half">
+      <a href="" class="logo">
+        {% set logo = logo.commonImageOne.one() %}
+        <img src="{{ logo.getUrl()  }}" alt="{{logo.alt}}" />
+      </a>
+    </div>
+    <div class="half content">
+        <ul class="">
+          <li>
+              <a href="/">Privacy Policy</a>
+          </li>
+          <li>
+              <a href="/Services">Cookie Policy</a>
+          </li> 
+          <li>
+            <a href="" target="_blank">
+              {% include '_partials/facebook.svg' %}
+            </a>
+            <a href="">
+              {% include '_partials/instagram.svg' %}
+            </a>
+          </li> 
+        </ul>
+    </div>
+  </div>
+
+</div>
+
+
+    
+
+
+      
+
+
+
+       
+          
+

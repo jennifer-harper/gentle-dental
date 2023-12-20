@@ -1,8 +1,26 @@
 @import 'variables';
 @import 'mixins';
 
-@import url('https://fonts.cdnfonts.com/css/sweet-sans-pro');
-@import url('https://fonts.cdnfonts.com/css/recoleta');
+// @import url('https://fonts.cdnfonts.com/css/sweet-sans-pro');
+// @import url('https://fonts.cdnfonts.com/css/recoleta');
+
+@font-face {
+  font-family: 'Recoleta';
+  src: url('../fonts/recoleta-regular-webfont.woff2') format('woff2'),
+       url('../fonts/recoleta-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Sweet Sans Pro';
+  src: url('../fonts/sweetsanspro-regular-webfont.woff2') format('woff2'),
+       url('../fonts/sweetsanspro-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
 
 *,
 *::before {
@@ -134,6 +152,7 @@ h1,h2,h3,h4,h5,h6 {
   font-weight: 400;
   color:$accent-900;
 }
+
 .dark{
   h1,h2,h3,h4,h5,h6{
     color:$white
@@ -204,10 +223,8 @@ img {
 
 svg {
   overflow: visible !important;
+  z-index: 1;
 }
-
-
-
 
 
 /**
@@ -219,11 +236,10 @@ svg {
     max-width:60%
   }
 }
+
 .max-60-img img{
   max-width:60%
 }
-
-
 
 
 .pad-all{
@@ -333,6 +349,11 @@ svg {
 }
 
 ////navigation
+
+header{
+  position: relative;
+  z-index: 5;
+}
 nav {
   position: fixed;
   width: 100%;
@@ -368,14 +389,36 @@ nav {
       text-align: center;
       display: block;
       float: none;
+      position: relative;
+      @media #{$mq-medium}{
+         position: unset;
+      }      
       a{
         color:#222;
         &:hover{
           color:red;
         }
       }
+
+
+
+      .dropdown-nav{
+        display:none;
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+        left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        @media #{$mq-medium}{
+          position: absolute;
+        }
+      }
     }
+
   }
+
+
 
   @media (min-width: 992px) {
     flex-wrap: nowrap;
@@ -384,7 +427,7 @@ nav {
     }
     .list-item {
       display: flex;
-      justify-content: flex-end;
+      justify-content: space-between;
       flex-wrap: wrap;
       padding-bottom: 0;
     }
@@ -763,4 +806,79 @@ flex-wrap: nowrap;
 }
 
 
+.footer{
+  h2{
+    font-size:8vw;
+  }
 
+  ul{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    li{
+      padding-right: $base-font-size;
+      a{
+        color:$accent-900;
+        @include transition;
+        &:hover{
+          color: $base-accent-color;
+        }
+      }
+    }
+    @media #{$mq-medium}{
+      justify-content: space-between;
+    }
+  }
+
+  .content{
+    @media #{$mq-medium}{
+      padding-left:$base;
+    }
+
+    div{
+      p{
+        text-transform: uppercase;
+        color:$accent-700;
+      }
+    }
+
+    .mailing-list{
+      padding-bottom: 40px;
+      border-bottom: 1px solid #D1D5DB;
+    }
+
+    .form-content{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      .forms{
+        width: 100%;
+        margin-right: 20px;
+      }
+      input{
+        width:100%;
+        border-width: 0;
+        background-color: transparent;
+      }
+      .bttn{
+        margin-top: 0;
+        p{
+          font-weight:bold;
+          color:$accent-900;
+        }
+      }
+    }
+  }
+
+  .logo img{
+    max-width:150px
+  }
+
+  ul li a{
+    svg{
+    margin-left:20px
+
+    }
+  }
+}

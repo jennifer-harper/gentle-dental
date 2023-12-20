@@ -1,4 +1,4 @@
-dateModified: 1702940200
+dateModified: 1703026871
 email:
   fromEmail: jennifer@ambitious.co.nz
   fromName: gentledental
@@ -27,6 +27,7 @@ meta:
     2b772ce1-3c56-4bd5-a89a-dceaf3e5e8e8: Information # Information
     2d1ed3d8-c821-4adc-8e4b-91c606b26465: 'Teeth Whitening' # Teeth Whitening
     3a233f41-129b-482b-82c0-b37d9513508d: 'Style Three Text Bold' # Style Three Text Bold
+    3a153748-38c8-484f-b564-9946e764a562: Logo # Logo
     3f0fc869-abab-4809-83cb-4804013ac713: 'Style One Text' # Style One Text
     4a7a0920-a2cb-4432-be51-afefad05a771: Invisalign # Invisalign
     5bbbfde3-bc7c-4989-945a-e3a2fc58b195: 'Periodontal Treatment' # Periodontal Treatment
@@ -58,6 +59,7 @@ meta:
     90c9b16f-c7c3-4dd9-96ca-aa26cf907067: 'Meta Description' # Meta Description
     94bdfa68-a6c9-4dac-b08c-e74d16020db8: 'Amalgam Removal' # Amalgam Removal
     99e67643-418f-426c-8878-bdaf710cbec4: 'Hygiene Treatment ' # Hygiene Treatment 
+    117b8151-9af2-4123-8cf1-2698f54ce4eb: 'Footer Image' # Footer Image
     404bd0ae-9bda-40d1-9caa-bd3084d4579b: 'What to expect' # What to expect
     453d4f2d-1ca5-455a-adbb-78369ad20816: 'Cosmetic Dentistry' # Cosmetic Dentistry
     609a7d98-d773-427c-ab93-928a27e885ec: home # home
