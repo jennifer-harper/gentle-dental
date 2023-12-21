@@ -51,6 +51,18 @@ fieldLayouts:
         elements:
           -
             elementCondition: null
+            fieldUid: 65f491e7-0041-45dd-b19d-d53956e2cdd5 # Style One Intro
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: da255236-439c-4028-bd85-405dc9786b43
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
             fieldUid: e82dbb37-5c20-480c-9edb-c8cb30603cb8 # Style One Title
             instructions: null
             label: null

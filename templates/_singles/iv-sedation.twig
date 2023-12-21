@@ -4,6 +4,12 @@
 {% set metaDesc = entry.metaDescription %}
 {% set page = craft.entries().section('ivSedation').all() %}
 
-{% block body %}
 
+{% block content %}
+  {% for entry in page %}
+
+    {% include '_partials/_services/style-one.twig' %}
+
+
+  {% endfor %}
 {% endblock %}

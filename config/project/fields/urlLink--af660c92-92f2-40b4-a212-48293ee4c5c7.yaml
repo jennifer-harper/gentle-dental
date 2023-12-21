@@ -1,0 +1,14 @@
+columnSuffix: qnypijrn
+contentColumnType: string(255)
+fieldGroup: e1a24ec9-d230-4a95-bb50-3aad81ca10d0 # Common
+handle: urlLink
+instructions: null
+name: 'Url Link'
+searchable: false
+settings:
+  maxLength: 255
+  types:
+    - url
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\Url

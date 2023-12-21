@@ -97,6 +97,18 @@ fieldLayouts:
             userCondition: null
             warning: null
             width: 100
+          -
+            elementCondition: null
+            fieldUid: 481b4eaa-6d7c-45b1-b40d-69cafd4d3004 # General Button Matrix
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 00445b60-3887-42b0-8ba0-44b78abc76b1
+            userCondition: null
+            warning: null
+            width: 100
         name: 'Style One'
         uid: 6676b5c7-4f9d-4bea-b9dc-8c44dc11a22e
         userCondition: null

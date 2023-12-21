@@ -4,6 +4,16 @@
 {% set metaDesc = entry.metaDescription %}
 {% set page = craft.entries().section('whatToExpect').all() %}
 
-{% block body %}
+{% block content %}
+  {% for entry in page %}
 
+    {% include '_partials/_services/style-two.twig' %}
+    {% embed '_partials/_services/style-three.twig' %}
+      {% block wrapper %} pad-top pad-lg{% endblock %}
+      {% block copy %} pad-btm cont-align-end {% endblock %}
+      {% block visual %} img-align-end  {% endblock %}
+    {% endembed %}
+
+
+  {% endfor %}
 {% endblock %}

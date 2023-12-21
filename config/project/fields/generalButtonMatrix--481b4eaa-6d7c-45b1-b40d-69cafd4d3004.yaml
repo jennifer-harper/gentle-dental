@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: e1a24ec9-d230-4a95-bb50-3aad81ca10d0 # Common
+handle: generalButtonMatrix
+instructions: null
+name: 'General Button Matrix'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_generalbuttonmatrix}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

@@ -1,6 +1,11 @@
   {% set bgImg = entry.styleOneBgImage.one() %}
     <div class="dark flex-wrap bg-img-svg style-one pad-top" style="background-image: url('{{ bgImg.getUrl() }}');">
       <div class="half pad-all just-cont-between">
+
+        {% if entry.styleOneIntro %}
+            <p>{{entry.styleOneIntro}}</p>
+        {% endif %}
+
         {% if entry.styleOneTitle %}
             <h1>{{entry.styleOneTitle}}</h1>
         {% endif %}
@@ -10,7 +15,29 @@
             {{entry.styleOneText}}
           {% endif %}
 
-          {% include '_partials/button.twig' %}
+            {# {% include '_partials/button' %} #}
+
+                {# {% for block in entry.generalButtonMatrix %}
+{% if block.type == 'informationPoints' %}
+    {% if block.buttonLink|length %}
+            {% for linkEntry in block.buttonLink %}
+                <div class="bttn {% block class %} default {% endblock %}">
+                        {% if linkEntry.url %}
+                        <a href="{{ linkEntry.url }}">
+                        {% endif %}
+
+                      {% if block.buttonText  %}
+                        <p>{{ block.buttonText }}</p>
+                          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 21 20" fill="none">
+                          <path d="M15.8935 14.5061L15.8935 6.02087L4.1656 17.7488L2.75138 16.3346L14.4793 4.60665L5.99402 4.60665V2.60665H17.8935V14.5061L15.8935 14.5061Z" />
+                          </svg>
+                        </a>
+                    {% endif %}
+                </div>
+            {% endfor %}
+    {% endif %}
+{% endif %}
+{% endfor %} #}
         </div>
       </div>
 
@@ -21,3 +48,21 @@
         {% endif %}
       </div>
     </div>
+
+
+
+{# {% for block in entry.generalButtonMatrix %}
+    {% if block.type == 'informationPoints' %}
+        {% if block.buttonLink %}
+            <a href="{{ block.buttonLink }}">{{ block.buttonText }}</a>
+        {% endif %}
+    {% endif %}
+{% endfor %}
+
+{% for block in entry.externalButtonMatrix %}
+    {% if block.type == 'informationPoints' %}
+        {% if block.buttonLink %}
+            <a href="{{ block.buttonLink }}">{{ block.buttonText }}</a>
+        {% endif %}
+    {% endif %}
+{% endfor %} #}

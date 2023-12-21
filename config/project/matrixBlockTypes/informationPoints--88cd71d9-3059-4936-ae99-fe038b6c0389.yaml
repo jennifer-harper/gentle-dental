@@ -1,0 +1,93 @@
+field: 481b4eaa-6d7c-45b1-b40d-69cafd4d3004 # General Button Matrix
+fieldLayouts:
+  055f2a97-f0e9-4e57-b509-d58511b72aad:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: 5c9daf6f-ce8b-44c4-8b27-4d3f4dd21fa9 # Button Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c7774a69-5914-4814-a6cd-fc90252c38d6
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c3ff56a2-a801-4506-86de-1a7e8be34e2d # Internal Page Button
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: acd9114c-225f-494d-879f-089c4554bfb9
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: 03c39fd2-4c76-47f8-83a6-3fe481d7323c
+        userCondition: null
+fields:
+  5c9daf6f-ce8b-44c4-8b27-4d3f4dd21fa9: # Button Text
+    columnSuffix: stegbvuw
+    contentColumnType: text
+    fieldGroup: null
+    handle: buttonText
+    instructions: null
+    name: 'Button Text'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  c3ff56a2-a801-4506-86de-1a7e8be34e2d: # Internal Page Button
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: buttonLink
+    instructions: null
+    name: 'Internal Page Button'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: 1
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: true
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+handle: informationPoints
+name: 'Information Points'
+sortOrder: 1
