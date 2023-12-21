@@ -6,7 +6,7 @@
 
 {% block content %}
   {% for entry in page %}
-
+ {% include '_partials/_services/style-one.twig' %}
     {% include '_partials/_services/style-two.twig' %}
     {% embed '_partials/_services/style-three.twig' %}
       {% block wrapper %} pad-top pad-lg{% endblock %}
