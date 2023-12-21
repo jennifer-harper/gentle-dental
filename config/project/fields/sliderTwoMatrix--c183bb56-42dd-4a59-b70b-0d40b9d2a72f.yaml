@@ -1,0 +1,16 @@
+columnSuffix: null
+contentColumnType: string
+fieldGroup: b08debf6-b629-48c9-940e-e27798a69ff4 # Sliders
+handle: sliderTwoMatrix
+instructions: null
+name: 'Slider Two Matrix'
+searchable: false
+settings:
+  contentTable: '{{%matrixcontent_slidertwomatrix}}'
+  maxBlocks: null
+  minBlocks: null
+  propagationKeyFormat: null
+  propagationMethod: all
+translationKeyFormat: null
+translationMethod: site
+type: craft\fields\Matrix

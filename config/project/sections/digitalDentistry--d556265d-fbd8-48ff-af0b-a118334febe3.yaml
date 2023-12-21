@@ -1,12 +1,12 @@
 defaultPlacement: end
 enableVersioning: true
-handle: home
-name: Home
+handle: digitalDentistry
+name: 'Digital Dentistry'
 propagationMethod: all
 siteSettings:
   805ffc42-1721-4cde-a599-12ed2eee29ce: # gentledental
     enabledByDefault: true
     hasUrls: true
-    template: _singles/home.twig
-    uriFormat: __home__
+    template: _singles/digital-dentistry.twig
+    uriFormat: digital-dentistry
 type: single

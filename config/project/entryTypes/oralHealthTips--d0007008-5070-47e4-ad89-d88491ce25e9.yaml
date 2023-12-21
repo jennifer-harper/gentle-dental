@@ -1,0 +1,131 @@
+fieldLayouts:
+  e0c10d69-62af-4006-9d04-4fb1ad1f23d2:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: c650c52f-ddec-4337-9ac0-4d6f6aa1ebbb
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 90c9b16f-c7c3-4dd9-96ca-aa26cf907067 # Meta Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 0b14c7f9-d2ad-4e3f-ae05-8227f115ca14
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: a2a1d7f3-fe37-4f3f-9e3c-1fa0058542a0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e82dbb37-5c20-480c-9edb-c8cb30603cb8 # Style One Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 9e32e64b-946d-4590-8b3a-40452c8c839f
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3f0fc869-abab-4809-83cb-4804013ac713 # Style One Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2d0332f9-1050-429c-aada-069c57daef3c
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9f6531ad-88af-4137-99a6-15a7b7a9dd51 # Style One Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 4e569601-578f-43fb-a7e6-b67ab179e1f2
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e002b8b3-446b-45ca-8eb2-38ef159e9919 # Style One BG Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: c11685cf-d053-4363-9b3b-7a781ffa1923
+            userCondition: null
+            warning: null
+            width: 100
+        name: One
+        uid: 829d7ecb-1fd3-4e57-8f05-4856412e119a
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ec565f82-1fc1-404f-a28c-8534ba0fe1f6 # Style Two Matrix
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: aec87e1c-bbb6-4160-af2b-6a078a4837ee
+            userCondition: null
+            warning: null
+            width: 100
+        name: Two
+        uid: c39de3fa-0db9-451b-bb96-b3d0e24cb452
+        userCondition: null
+handle: oralHealthTips
+hasTitleField: false
+name: 'Oral Health Tips '
+section: 1a0a6a48-7c98-4f57-ba9d-18b6fe59f276 # Oral Health Tips 
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

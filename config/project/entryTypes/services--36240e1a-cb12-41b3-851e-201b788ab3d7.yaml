@@ -1,0 +1,155 @@
+fieldLayouts:
+  e74c68f9-5f89-450c-af4f-243bb89f9166:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            autocapitalize: true
+            autocomplete: false
+            autocorrect: true
+            class: null
+            disabled: false
+            elementCondition: null
+            id: null
+            inputType: null
+            instructions: null
+            label: null
+            max: null
+            min: null
+            name: null
+            orientation: null
+            placeholder: null
+            readonly: false
+            requirable: false
+            size: null
+            step: null
+            tip: null
+            title: null
+            type: craft\fieldlayoutelements\entries\EntryTitleField
+            uid: e5f73693-4539-4806-9c7e-e39247ae2fc7
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 90c9b16f-c7c3-4dd9-96ca-aa26cf907067 # Meta Description
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 2e03c3c6-53f8-48a1-ba9c-038761a5c04f
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: c1b938ab-8cb1-4dbb-a2a9-0cbc14433582
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: e82dbb37-5c20-480c-9edb-c8cb30603cb8 # Style One Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: e86139d0-0841-4afd-9b91-cf961be979be
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 3f0fc869-abab-4809-83cb-4804013ac713 # Style One Text
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: d9e9df21-bbf5-4cc5-9650-5b59c33693de
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 9f6531ad-88af-4137-99a6-15a7b7a9dd51 # Style One Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 5be5d65c-15f3-48ee-bf0d-15f03e91f668
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: e002b8b3-446b-45ca-8eb2-38ef159e9919 # Style One BG Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 64ae8320-94cc-495b-8daa-6d197abe4717
+            userCondition: null
+            warning: null
+            width: 100
+        name: One
+        uid: ab409911-1a52-4902-b5d2-41d4bba0b6f0
+        userCondition: null
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: ac2de254-74f3-4e52-bc87-071b5dd1ada7 # Slider One Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 6cb8466a-1f19-41ac-8be9-2ebe76ee1506
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: ec8a45bb-4f7d-4a01-8337-0a7a37fff2c1 # Slider One Image
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 00fe27f5-7142-4722-a6b0-f216243af748
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: c183bb56-42dd-4a59-b70b-0d40b9d2a72f # Slider Two Matrix
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: a380f590-3e1b-4a1f-97a6-98b725819e8b
+            userCondition: null
+            warning: null
+            width: 100
+        name: Two
+        uid: 77ceb593-ae39-4df7-9873-8514e5289232
+        userCondition: null
+handle: services
+hasTitleField: false
+name: Services
+section: 3362dad8-dbcf-4b25-9742-be0c95ac388c # Services
+showStatusField: true
+slugTranslationKeyFormat: null
+slugTranslationMethod: site
+sortOrder: 1
+titleFormat: '{section.name|raw}'
+titleTranslationKeyFormat: null
+titleTranslationMethod: site

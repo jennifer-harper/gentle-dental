@@ -1,0 +1,129 @@
+field: c183bb56-42dd-4a59-b70b-0d40b9d2a72f # Slider Two Matrix
+fieldLayouts:
+  b10fd331-a48c-44cc-bb96-55aa305e8ffc:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d5322f2f-3fbe-4f16-95e0-12970b48e8e0 # Info Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: dd9191e1-9a6b-4eb4-94f6-e9d55d90a1e4
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: f72d8b67-4a9d-4dff-aa8b-bc044f57ae30 # Information
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: f595fb5d-9b52-46cb-922b-497595addb6d
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 2f022349-da09-40f0-b408-a18c8078d206 # Page Link
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 541be7cd-fcd7-4d76-a888-54ada997ac1d
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: e102430b-43ef-417d-a0c0-4e6e6e12befb
+        userCondition: null
+fields:
+  2f022349-da09-40f0-b408-a18c8078d206: # Page Link
+    columnSuffix: null
+    contentColumnType: string
+    fieldGroup: null
+    handle: pageLink
+    instructions: null
+    name: 'Page Link'
+    searchable: false
+    settings:
+      allowSelfRelations: false
+      branchLimit: null
+      localizeRelations: false
+      maintainHierarchy: false
+      maxRelations: null
+      minRelations: null
+      selectionCondition:
+        __assoc__:
+          -
+            - elementType
+            - craft\elements\Entry
+          -
+            - fieldContext
+            - global
+          -
+            - class
+            - craft\elements\conditions\entries\EntryCondition
+      selectionLabel: null
+      showSiteMenu: false
+      sources: '*'
+      targetSiteId: null
+      validateRelatedElements: false
+      viewMode: null
+    translationKeyFormat: null
+    translationMethod: site
+    type: craft\fields\Entries
+  d5322f2f-3fbe-4f16-95e0-12970b48e8e0: # Info Title
+    columnSuffix: luwjiikn
+    contentColumnType: text
+    fieldGroup: null
+    handle: infoTitle
+    instructions: null
+    name: 'Info Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  f72d8b67-4a9d-4dff-aa8b-bc044f57ae30: # Information
+    columnSuffix: dawdzhqm
+    contentColumnType: text
+    fieldGroup: null
+    handle: information
+    instructions: null
+    name: Information
+    searchable: false
+    settings:
+      availableTransforms: ''
+      availableVolumes: '*'
+      ckeConfig: e4cf4cf0-9fac-4d90-a42f-2bdb6eb23e8f # Just Paragrpah
+      columnType: text
+      defaultTransform: null
+      enableSourceEditingForNonAdmins: false
+      purifierConfig: null
+      purifyHtml: true
+      showUnpermittedFiles: false
+      showUnpermittedVolumes: false
+      showWordCount: false
+      wordLimit: null
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\ckeditor\Field
+handle: informationPoints
+name: 'Information Points'
+sortOrder: 1
