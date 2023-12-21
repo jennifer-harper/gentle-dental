@@ -1,5 +1,8 @@
-{% extends "_layout.twig" %} {% set bodyAttributes ={ class: "homepage" } %} {%
-set docTitle = 'Home | Gentle Dental ' %} {% set metaDesc = "Home " %} 
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "home" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %}
+{% set page = craft.entries().section('home').all() %}
 
 
 {% set bodyAttributes ={ class: "home" } %} 

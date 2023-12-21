@@ -1,0 +1,9 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "about-us" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %}
+{% set page = craft.entries().section('aboutUs').all() %}
+
+{% block body %}
+
+{% endblock %}

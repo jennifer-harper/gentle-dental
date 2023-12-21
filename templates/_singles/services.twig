@@ -1,0 +1,9 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "services" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %}
+{% set page = craft.entries().section('services').all() %}
+
+{% block body %}
+
+{% endblock %}

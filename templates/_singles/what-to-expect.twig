@@ -1,0 +1,9 @@
+{% extends "_layout.twig" %} 
+{% set bodyAttributes ={ class: "what-to-expect" } %} 
+{% set docTitle = entry.title %} 
+{% set metaDesc = entry.metaDescription %}
+{% set page = craft.entries().section('whatToExpect').all() %}
+
+{% block body %}
+
+{% endblock %}
