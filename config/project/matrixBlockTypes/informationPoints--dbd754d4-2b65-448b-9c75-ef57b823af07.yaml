@@ -1,0 +1,110 @@
+field: a6935e00-3863-47c8-b7c9-9406f726a4d5 # Testimonials
+fieldLayouts:
+  511ef36b-263a-43c8-89d5-385f6a889664:
+    tabs:
+      -
+        elementCondition: null
+        elements:
+          -
+            elementCondition: null
+            fieldUid: d96a4586-acce-4fa1-a338-2f1694e2185d # Testimonial Title
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: b5cdbccf-9eb1-4a70-b13a-1018078843df
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 954fc0cc-ddbd-4037-9b54-d31d9df42734 # Testimonial Content
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 35787c8b-07b7-43a3-9034-43cb0464e3ac
+            userCondition: null
+            warning: null
+            width: 100
+          -
+            elementCondition: null
+            fieldUid: 907a37aa-016b-4ada-941a-9ca10f36aeaa # Testimonial Author
+            instructions: null
+            label: null
+            required: false
+            tip: null
+            type: craft\fieldlayoutelements\CustomField
+            uid: 8df625ad-e3a6-44d5-8081-8b1236636a42
+            userCondition: null
+            warning: null
+            width: 100
+        name: Content
+        uid: ac8c82fa-cf9b-448f-821b-689c88a0c39c
+        userCondition: null
+fields:
+  907a37aa-016b-4ada-941a-9ca10f36aeaa: # Testimonial Author
+    columnSuffix: nvewaaex
+    contentColumnType: text
+    fieldGroup: null
+    handle: testimonialAuthor
+    instructions: null
+    name: 'Testimonial Author'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  954fc0cc-ddbd-4037-9b54-d31d9df42734: # Testimonial Content
+    columnSuffix: rchfuzhb
+    contentColumnType: text
+    fieldGroup: null
+    handle: testimonialContent
+    instructions: null
+    name: 'Testimonial Content'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+  d96a4586-acce-4fa1-a338-2f1694e2185d: # Testimonial Title
+    columnSuffix: hevoernk
+    contentColumnType: text
+    fieldGroup: null
+    handle: testimonialTitle
+    instructions: null
+    name: 'Testimonial Title'
+    searchable: false
+    settings:
+      byteLimit: null
+      charLimit: null
+      code: false
+      columnType: null
+      initialRows: 4
+      multiline: false
+      placeholder: null
+      uiMode: normal
+    translationKeyFormat: null
+    translationMethod: none
+    type: craft\fields\PlainText
+handle: informationPoints
+name: Testimonials
+sortOrder: 1

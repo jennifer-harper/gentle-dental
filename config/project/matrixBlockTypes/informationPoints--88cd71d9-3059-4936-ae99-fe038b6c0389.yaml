@@ -89,5 +89,5 @@ fields:
     translationMethod: site
     type: craft\fields\Entries
 handle: informationPoints
-name: 'Information Points'
+name: Buttons
 sortOrder: 1

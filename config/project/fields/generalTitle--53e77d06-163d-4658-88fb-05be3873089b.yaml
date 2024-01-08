@@ -1,0 +1,19 @@
+columnSuffix: gjzxzbon
+contentColumnType: text
+fieldGroup: e1a24ec9-d230-4a95-bb50-3aad81ca10d0 # Common
+handle: generalTitle
+instructions: null
+name: 'General Title'
+searchable: false
+settings:
+  byteLimit: null
+  charLimit: null
+  code: false
+  columnType: null
+  initialRows: 4
+  multiline: false
+  placeholder: null
+  uiMode: normal
+translationKeyFormat: null
+translationMethod: none
+type: craft\fields\PlainText

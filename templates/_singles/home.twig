@@ -1,148 +1,202 @@
-{% extends "_layout.twig" %} 
-{% set bodyAttributes ={ class: "home" } %} 
-{% set docTitle = entry.title %} 
-{% set metaDesc = entry.metaDescription %}
-{% set page = craft.entries().section('home').all() %}
+{% extends "_layout.twig" %} {% set bodyAttributes ={ class: "homepage" } %} {%
+set docTitle = 'Home | Gentle Dental ' %} {% set metaDesc = "Home " %} {% set
+bodyAttributes ={ class: "home" } %} {% set docTitle = entry.title %} {% set
+metaDesc = entry.metaDescription %} {% set page =
+craft.entries().section('home').all() %} {% block content %} {% for entry in
+page %} {% include '_partials/_services/style-one.twig' %}
 
+<div class="dark pad-all style-five bg-800">
+  <div class="underlined-heading">
+    {% if entry.styleSevenTitle %}
+    <h2>{{ entry.styleSevenTitle }}</h2>
+    {% endif %} {% if entry.wteOtherText %}
+    <div class="max-60">{{ entry.wteOtherText }}</div>
+    {% endif %}
+  </div>
 
-{% set bodyAttributes ={ class: "home" } %} 
-{% set docTitle = entry.title %} 
-{% set metaDesc = entry.metaDescription %}
-{% set page = craft.entries().section('home').all() %}
-
-{% block content %}
-    {% for entry in page %}
-    {% include '_partials/_services/style-one.twig' %}
-
-    <div class="dark pad-all style-five bg-800">
-      <div class="underlined-heading">
-        {% if entry.styleSevenTitle %}
-          <h2>{{entry.styleSevenTitle}}</h2>
+  <div class="flex-wrap">
+    <div class="half flex-wrap wrap num-point w-33 side-border">
+      {% for block in entry.styleSevenMatrix %} {% if block.type ==
+      'informationPoints' %}
+      <div>
+        <h3>{{ block.informationTitle }}</h3>
+        {% if block.information %}
+        {{ block.information }}
         {% endif %}
-        {% if entry.wteOtherText %}
-          <div class="max-60"> {{entry.wteOtherText}}</div>  
+      </div>
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+</div>
+
+<div class="bg-100 style-six pad-all">
+  {% set image = entry.styleSixImage.all() %}
+  <div class="align-items-center text-center pad-btm">
+    <div class="pad-top flex-wrap just-cont-center-row visual">
+      <div class="third img-style-one other">
+        {% if image|length >= 2 %}
+        <img src="{{ image[0].getUrl() }}" alt="{{ image[0].alt }}" />
         {% endif %}
       </div>
 
-      <div class="flex-wrap">
-        <div class=" half flex-wrap wrap num-point w-33 side-border">
-          {% for block in entry.styleSevenMatrix %}
-            {% if block.type == 'informationPoints' %}
-              <div>
-                <h3>{{block.informationTitle}}</h3>
-                {% if block.information %}
-                  {{block.information}}
-                {% endif %}
-              </div>
-            {% endif %}
-          {% endfor %}
+      <div class="text-style-one just-cont-center">
+        <div class="intro">
+          {% if entry.styleSixTitle %}
+          <h2>{{ entry.styleSixTitle }}</h2>
+          {% endif %} {% if entry.styleSixTextBold %}
+          {{ entry.styleSixTextBold }}
+          {% endif %}
+        </div>
+        {% if entry.styleSixText %}
+        {{ entry.styleSixText }}
+        {% endif %} {% embed '_partials/button.twig' %} {% block url %}
+        /about-us {% endblock %} {% block title %} About Us {% endblock %} {%
+        endembed %}
+      </div>
+
+      <div class="third img-style-two other just-cont-between">
+        <div>
+          {% if image|length >= 2 %}
+          <img src="{{ image[1].getUrl() }}" alt="{{ image[1].alt }}" />
+          {% endif %}
+        </div>
+        <div>
+          {% if image|length >= 2 %}
+          <img src="{{ image[2].getUrl() }}" alt="{{ image[2].alt }}" />
+          {% endif %}
         </div>
       </div>
     </div>
+  </div>
+  {% set image2 = entry.styleThreeImage.one() %} {% if image2 %}
+  <img src="{{ image2.getUrl() }}" alt="{{ image2.alt }}" />
+  {% endif %}
+</div>
 
-
-    <div class="bg-100 style-six pad-all">
-        {% set image = entry.styleSixImage.all() %}
-      <div class="align-items-center text-center pad-btm">
-        <div class="pad-top flex-wrap just-cont-center-row visual">
-          <div class="third img-style-one other">
-            {% if image|length >= 2 %}
-            <img src="{{ image[0].getUrl() }}" alt="{{ image[0].alt }}">
-            {% endif %}
-          </div>
-
-          <div class="text-style-one just-cont-center">
-            <div class="intro">
-              {% if entry.styleSixTitle %}
-                <h2>{{entry.styleSixTitle}}</h2>
-              {% endif %}
-              {% if entry.styleSixTextBold %}
-                {{entry.styleSixTextBold}}
-              {% endif %}
-            </div>
-              {% if entry.styleSixText %}
-                {{entry.styleSixText}}
-              {% endif %}
-
-              {% embed '_partials/button.twig' %}
-                {% block url %} /about-us {% endblock %}
-                {% block title %} About Us {% endblock %}
-              {% endembed %}
-          </div>
-
-          <div class="third img-style-two other just-cont-between">
-            <div>
-              {% if image|length >= 2 %}
-                <img src="{{ image[1].getUrl() }}" alt="{{ image[1].alt }}">
-              {% endif %}
-            </div>
-            <div>
-              {% if image|length >= 2 %}
-                <img src="{{ image[2].getUrl() }}" alt="{{ image[2].alt }}">
-              {% endif %}
-            </div>
-          </div>
-        </div>
-      </div>
-      {% set image2 = entry.styleThreeImage.one() %}
-      {% if image2 %}
-        <img src="{{ image2.getUrl() }}" alt="{{ image2.alt }}">
+{# slider one #}
+<div class="flex-wrap dark">
+  <div class="half pad-sides pad-top just-cont-between">
+    {% if entry.sliderOneTitle %}
+    <h2>{{ entry.sliderOneTitle }}</h2>
+    {% endif %}
+    <div class="pad-top">
+      {% set image = entry.sliderOneImage.one() %} {% if image %}
+      <img src="{{ image.getUrl() }}" alt="{{ image.alt }}" />
       {% endif %}
     </div>
+  </div>
 
+  <div class="half grow-vis swiper slider-one bg-800 dark">
+    <div class="swiper-wrapper">
+      {% for block in entry.sliderTwoMatrix %} {% if block.type ==
+      'informationPoints' %}
 
-    <div class="flex-wrap dark">
-      <div class="half pad-sides pad-top just-cont-between">
-        {% if entry.sliderOneTitle %}
-          <h2>{{entry.sliderOneTitle }}</h2>
-        {% endif %}
-        <div class="pad-top">
-          {% set image = entry.sliderOneImage.one() %}
-          {% if image %}
-            <img src="{{ image.getUrl() }}" alt="{{ image.alt}}">
-          {% endif %}    
+      <div class="swiper-slide pad-top pad-btm">
+        <div class="info-points just-cont-between pad-sides">
+          <div class="text-list">
+            {% if block.infoTitle %}
+            <h3>{{ block.infoTitle }}</h3>
+            {% endif %} {% if block.information %}
+            {{ block.information }}
+            {% endif %} {% if block.pageLink|length %}
+            <ul>
+              {% for linkEntry in block.pageLink %}
+              <li>
+                {% if linkEntry.title %}
+                <a href="{{ linkEntry.url }}">{{ linkEntry.title }}</a>
+                {% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+            {% endif %}
+          </div>
         </div>
       </div>
 
-      <div class="half  grow-vis swiper slider-one bg-800 dark">
-        <div class="swiper-wrapper">
-          {% for block in entry.sliderTwoMatrix %}
-          {% if block.type == 'informationPoints' %}
+      {% endif %} {% endfor %}
+    </div>
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
 
-          <div class="swiper-slide pad-top pad-btm ">
-            <div class="info-points just-cont-between pad-sides">
-              <div class="text-list">
-                {% if block.infoTitle %}
-                  <h3>{{block.infoTitle}}</h3>
-                {% endif %}
-                {% if block.information %}
-                  {{block.information}}
-                {% endif %}
+{# testimonial slider #}
+<div class="swiper slider-testimonial bg-100 pad-btm">
+  <div class="text-center intro pad-top">
+    <p>Testimonials</p>
+    {% if entry.styleFourTitle %}
+    <h2>{{ entry.styleFourTitle }}</h2>
+    {% endif %}
+  </div>
 
-                {% if block.pageLink|length %}
-                  <ul>
-                    {% for linkEntry in block.pageLink %}
-                      <li>
-                        {% if linkEntry.title %}
-                          <a href="{{linkEntry.url}}">{{ linkEntry.title }}</a>
-                        {% endif %}
-                      </li>
-                    {% endfor %}
-                  </ul>
-                {% endif %}
-              </div>
-            </div>
+  <div class="swiper-wrapper">
+    {% for block in entry.testimonials %} {% if block.type ==
+    'informationPoints' %}
+    <div class="swiper-slide bg-light-grey">
+      <div class="pad-sides pad-top pad-btm sliderx">
+        <img src="../uploads/images/quote-marks.svg" alt="thing" />
+        <div>
+          <div>
+            {% if block.testimonialTitle %}
+            <h3>{{ block.testimonialTitle }}</h3>
+            {% endif %} {% if block.testimonialContent %}
+            {{ block.testimonialContent }}
+            {% endif %}
           </div>
 
-          {% endif %}
-          {% endfor %}
+          <div class="author">
+            {% if block.testimonialAuthor %}
+            {{ block.testimonialAuthor }}
+            {% endif %}
+          </div>
         </div>
-          <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
       </div>
-    </div>    
+    </div>
+    {% endif %} {% endfor %}
+  </div>
+  <div class="slider-btn-wrapper">
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+</div>
 
-  {% endfor %}
-{% endblock %}
- 
+<div class="bg-150 style-six pad-all">
+  {% set image = entry.generalImages.all() %}
+  <div class="align-items-center text-center">
+    <div class="flex-wrap just-cont-center-row visual">
+      <div class="third img-style-one">
+        {% if image|length >= 2 %}
+        <img src="{{ image[0].getUrl() }}" alt="{{ image[0].alt }}" />
+        {% endif %}
+      </div>
+
+      <div class="text-style-one just-cont-center">
+        <div class="pad-btm sm">
+          {% if entry.generalTitle %}
+          <h2>{{ entry.generalTitle }}</h2>
+          {% endif %}
+        </div>
+        {% if entry.generalText %}
+        {{ entry.generalText }}
+        {% endif %}
+      </div>
+
+      <div class="third img-style-two just-cont-between">
+        <div>
+          {% if image|length >= 2 %}
+          <img src="{{ image[1].getUrl() }}" alt="{{ image[1].alt }}" />
+          {% endif %}
+        </div>
+        <div>
+          {% if image|length >= 2 %}
+          <img src="{{ image[2].getUrl() }}" alt="{{ image[2].alt }}" />
+          {% endif %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endfor %} {% endblock %}

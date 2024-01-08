@@ -107,6 +107,16 @@ p {
   margin: 0 0 1em;
 }
 
+.text-center {
+  text-align: center;
+}
+@media (min-width: 64em) {
+  .text-center p {
+    max-width: 55vw;
+    margin: 0 auto;
+  }
+}
+
 .intro p {
   font-size: 1.2em;
   line-height: 1.25;
@@ -116,15 +126,6 @@ p {
 @media (min-width: 160em) {
   .intro p {
     margin-top: 3vw;
-  }
-}
-
-.text-center {
-  text-align: center;
-}
-@media (min-width: 64em) {
-  .text-center p {
-    max-width: 55vw;
   }
 }
 
@@ -206,12 +207,20 @@ h3 {
   background-color: #C3DDFD;
 }
 
+.bg-150 {
+  background-color: #E1EFFE;
+}
+
 .bg-100 {
   background-color: #F9FAFB;
 }
 
 .bg-50 {
   background-color: #EBF5FF;
+}
+
+.bg-light-grey {
+  background-color: #f3f4f6;
 }
 
 /**
@@ -460,23 +469,32 @@ nav .list-item li .dropdown-nav {
 .swiper {
   width: 100%;
 }
-
-.slider-one .swiper-button-prev,
-.slider-one .swiper-button-next {
+.swiper .slider-btn-wrapper {
+  position: relative;
+  margin-bottom: 6vw;
+}
+@media (min-width: 64em) {
+  .swiper .slider-btn-wrapper {
+    margin-bottom: 3vw;
+  }
+}
+.swiper .swiper-button-prev,
+.swiper .swiper-button-next {
   top: calc(100% - 20px);
   right: 0;
   color: #fff;
   background-color: #2cdcac;
   width: 44px;
 }
-.slider-one .swiper-button-prev:after,
-.slider-one .swiper-button-next:after {
+.swiper .swiper-button-prev:after,
+.swiper .swiper-button-next:after {
   font-size: 1em;
 }
-.slider-one .swiper-button-prev {
+.swiper .swiper-button-prev {
   left: unset;
   right: 45px;
 }
+
 .slider-one .swiper-slide h3 {
   margin-bottom: 1em;
 }
@@ -507,6 +525,46 @@ nav .list-item li .dropdown-nav {
 }
 .slider-one .text-list ul li a:hover {
   color: #2cdcac;
+}
+
+.slider-testimonial .intro p, .slider-testimonial h2, .slider-testimonial .author {
+  color: #76A9FA;
+}
+.slider-testimonial .intro p {
+  padding-bottom: 2em;
+}
+.slider-testimonial .author {
+  margin-top: 2em;
+}
+.slider-testimonial .swiper-wrapper {
+  margin-top: 1.2em;
+}
+.slider-testimonial .swiper-wrapper .swiper-slide {
+  height: unset;
+}
+.slider-testimonial .swiper-wrapper .swiper-slide img {
+  width: 8vw;
+  margin-bottom: 1em;
+}
+.slider-testimonial .swiper-wrapper .swiper-slide h3 {
+  margin-bottom: 1em;
+}
+@media (min-width: 64em) {
+  .slider-testimonial .swiper-wrapper {
+    margin-top: -1.2em;
+  }
+  .slider-testimonial .swiper-wrapper .sliderx {
+    height: 100%;
+    display: flex;
+    align-items: flex-start;
+  }
+  .slider-testimonial .swiper-wrapper .sliderx > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    margin-left: 20px;
+  }
 }
 
 .style-five.pad-all {
@@ -698,8 +756,14 @@ nav .list-item li .dropdown-nav {
   max-width: 65%;
   margin-bottom: 40px;
 }
+@media (min-width: 48em) {
+  .style-six .visual .img-style-one img {
+    max-width: 100%;
+  }
+}
 @media (min-width: 64em) {
   .style-six .visual .img-style-one img {
+    max-width: 65%;
     margin-bottom: 0;
   }
 }
@@ -720,17 +784,33 @@ nav .list-item li .dropdown-nav {
   margin-top: 20px;
   max-width: 40%;
 }
+@media (min-width: 48em) {
+  .style-six .visual .img-style-two div:first-of-type img {
+    max-width: 100%;
+  }
+}
 @media (min-width: 64em) {
   .style-six .visual .img-style-two div:first-of-type img {
     margin-top: 0;
+    max-width: 40%;
   }
 }
 .style-six .visual .img-style-two div:last-of-type {
   justify-content: flex-end;
 }
 .style-six .visual .img-style-two div:last-of-type img {
-  margin-top: -40px;
   max-width: 50%;
+}
+@media (min-width: 48em) {
+  .style-six .visual .img-style-two div:last-of-type img {
+    max-width: 100%;
+  }
+}
+@media (min-width: 64em) {
+  .style-six .visual .img-style-two div:last-of-type img {
+    margin-top: -40px;
+    max-width: 50%;
+  }
 }
 .style-six .visual .img-style-two.other div:first-of-type {
   justify-content: center;
@@ -740,7 +820,16 @@ nav .list-item li .dropdown-nav {
 }
 .style-six .visual .img-style-two.other div:last-of-type img {
   margin-top: 0px;
-  max-width: 50%;
+}
+@media (min-width: 48em) {
+  .style-six .visual .img-style-two.other div:last-of-type img {
+    max-width: 100%;
+  }
+}
+@media (min-width: 64em) {
+  .style-six .visual .img-style-two.other div:last-of-type img {
+    max-width: 50%;
+  }
 }
 .style-six .border-top {
   border-top: 1px solid #1a56db;
@@ -869,6 +958,12 @@ nav .list-item li .dropdown-nav {
   .home .style-five h3 {
     max-width: 60%;
   }
+}
+.home .text-style-one .intro {
+  margin-bottom: 20px;
+}
+.home .text-style-one .pad-btm.sm {
+  padding-bottom: 1em;
 }
 
 .footer h2 {
